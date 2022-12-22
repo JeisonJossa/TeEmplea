@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Editar sector</title>
+</h:head>
+<body>
+	<h:form prependId="false">
+		<p:panelGrid>
+			<p:outputLabel>ACTUALIZACION DE SECTOR</p:outputLabel>
+		</p:panelGrid>
+		<p:panelGrid columns="3" id="panel2">
+			<p:outputLabel for="inId">Id</p:outputLabel>
+			<p:inputNumber value="#{sectorMB.sectorAModificar.id}"
+				disabled="true" id="inId" />
+			<p:message for="inId" />
+
+			<p:outputLabel for="itNombre">Nombre</p:outputLabel>
+			<p:inputText value="#{sectorMB.sectorAModificar.nombre}"
+				id="itNombre" maxlength="30"
+				validatorMessage="Nombre. campo invalido" required="true"
+				requiredMessage="Nombre. campo requerido" />
+			<p:message for="itNombre" />
+		</p:panelGrid>
+		<p:panelGrid columns="2">
+			<p:commandButton action="#{sectorMB.actualizarSector()}"
+				value="Guardar" update="panel2" />
+			<p:commandButton action="listaSectores" value="Cancelar"
+				immediate="true" />
+		</p:panelGrid>
+	</h:form>
+</body>
+</html>

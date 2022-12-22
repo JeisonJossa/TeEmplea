@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Crear experiencia</title>
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="usuario.css" />
+</h:head>
+<h:body id="bodyCrearExperiencia">
+	<h:form prependId="false">
+		<p:growl id="mensaje" life="1000" showDetail="true" />
+		<h:panelGrid>
+			<h:commandLink action="/informacionUsuario/perfilUsuario"
+				value="Te Emplea" styleClass="lblTeEmplea" immediate="true" />
+		</h:panelGrid>
+
+		<div class="conInformacionBasica">
+
+			<p:panelGrid>
+				<p:outputLabel value="Creación de experiencia laboral" />
+			</p:panelGrid>
+
+			<p:panelGrid columns="2">
+
+				<p:outputLabel value="Identificacion" />
+
+				<h:selectOneMenu styleClass="txtInformacion"
+					value="#{experienciaLaboralMB.experienciaLaboralACrear.identificacion}"
+					required="true">
+					<f:selectItem itemLabel="#{usuarioMB.nombrePersona}"
+						itemValue="#{usuarioMB.nombrePersona}" />
+				</h:selectOneMenu>
+
+				<p:outputLabel value="Compañia" />
+				<p:inputText id="compania"
+					value="#{experienciaLaboralMB.experienciaLaboralACrear.empresa}"
+					maxlength="30" validatorMessage="Cargo. campo invalido"
+					required="true" requiredMessage="Cargo. campo requerido" />
+
+
+				<p:outputLabel value="Cargo" />
+				<p:inputText id="cargo"
+					value="#{experienciaLaboralMB.experienciaLaboralACrear.cargo}"
+					maxlength="30" validatorMessage="Cargo. campo invalido"
+					required="true" requiredMessage="Cargo. campo requerido" />
+			</p:panelGrid>
+
+			<p:panelGrid columns="2">
+				<p:outputLabel for="sector" value="Sector" />
+				<p:selectOneMenu id="sector"
+					value="#{experienciaLaboralMB.experienciaLaboralACrear.sector}">
+					<f:selectItems var="sector" itemLabel="#{sector.nombre}"
+						itemValue="#{sector.nombre}" value="#{sectorMB.listaSectores}" />
+				</p:selectOneMenu>
+			</p:panelGrid>
+
+			<p:panelGrid columns="3">
+				<p:outputLabel value="Funciones" />
+				<p:inputText id="funciones"
+					value="#{experienciaLaboralMB.experienciaLaboralACrear.funciones}"
+					maxlength="50" validatorMessage="Cargo. campo invalido"
+					required="true" requiredMessage="Cargo. campo requerido" />
+
+			</p:panelGrid>
+			<p:outputLabel for="fechaInicial" value="Fecha  inicial" />
+			<p:datePicker id="fechaInicial"
+				value="#{experienciaLaboralMB.experienciaLaboralACrear.fechainicial}"
+				showIcon="true" style="width:auto" placeholder="Fecha de inicial" />
+
+			<p:outputLabel for="fechaFinal" value="Fecha  final" />
+			<p:datePicker id="fechaFinal"
+				value="#{experienciaLaboralMB.experienciaLaboralACrear.fechafinal}"
+				showIcon="true" style="width:auto" placeholder="Fecha de final" />
+
+
+
+			<h:panelGrid columns="2" style="margin-top: 20px;">
+
+				<h:commandButton
+					action="#{experienciaLaboralMB.guardarExperienciaLaboral()}"
+					value="Guardar" styleClass="btnPrimario" />
+				<h:commandButton action="perfilUsuario" value="Regresar"
+					immediate="true" styleClass="btnSecundario" />
+			</h:panelGrid>
+		</div>
+	</h:form>
+</h:body>
+</html>

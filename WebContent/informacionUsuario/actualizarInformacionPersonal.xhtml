@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Registrar informacion basica</title>
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="usuario.css" />
+</h:head>
+<h:body>
+	<h:form>
+		<p:growl id="mensaje" life="1000" showDetail="true" />
+		<h:panelGrid>
+			<h:commandLink action="/informacionUsuario/perfilUsuario"
+				value="Te Emplea" styleClass="lblTeEmplea" immediate="true" />
+
+			<h:outputLabel value="#{informacionPersonalMB.nombrePersona}" />
+
+		</h:panelGrid>
+
+		<div class="conInformacionBasica">
+
+			<div>
+
+				<div style="margin-top: 20px;">
+					<h:outputLabel value="Perfil profesional" styleClass="lblTitulos" />
+				</div>
+
+				<!-- campo ingresar descripcion -->
+				<div style="margin-top: 20px;" class="perfilProfesional">
+					<p:editor id="editor" maxlength="500"
+						value="#{informacionPersonalMB.informacionPersonalAModificar.descripcion}"
+						styleClass="perfilProfesional" required="true" />
+				</div>
+
+				<h:panelGrid style="margin-top: 10px;">
+					<h:outputLabel value="Informacion basica" styleClass="lblTitulos" />
+				</h:panelGrid>
+
+				<div>
+
+					<!-- lbl nombres -->
+					<!-- lbl apellidos -->
+					<!-- lbl No. identificacion -->
+					<h:panelGrid columns="3" style="margin-top: 10px;">
+						<h:outputLabel value="Nombres" styleClass="lbl"
+							style="margin-right: 180px;" />
+						<h:outputLabel value="Apellidos" styleClass="lbl"
+							style="margin-right: 175px;" />
+						<h:outputLabel value="No. identificacion" styleClass="lbl" />
+					</h:panelGrid>
+
+					<h:panelGrid columns="3">
+						<h:inputText
+							value="#{informacionPersonalMB.informacionPersonalAModificar.nombres}"
+							styleClass="txtInformacion" required="true" />
+						<h:inputText
+							value="#{informacionPersonalMB.informacionPersonalAModificar.apellidos}"
+							styleClass="txtInformacion" required="true"/>
+						<h:selectOneMenu styleClass="txtInformacion"
+							value="#{informacionPersonalMB.informacionPersonalAModificar.identificacion}" required="true">
+							<f:selectItem itemLabel="#{informacionPersonalMB.cedulaPersona}"
+								itemValue="#{informacionPersonalMB.cedulaPersona}" />
+						</h:selectOneMenu>
+					</h:panelGrid>
+
+					<h:panelGrid columns="3" style="margin-top: 10px;">
+						<h:outputLabel value="Fecha de nacimiento" styleClass="lbl"
+							style="margin-right: 90px;" />
+						<h:outputLabel value="Genero" styleClass="lbl"
+							style="margin-right: 190px;" />
+						<h:outputLabel value="Correo" styleClass="lbl" />
+					</h:panelGrid>
+
+					<!-- Correo del usuario -->
+					<h:panelGrid columns="3">
+
+						<p:datePicker id="fechaNacimiento" 
+							placeholder="Fecha de nacimiento"
+							value="#{informacionPersonalMB.informacionPersonalAModificar.fechaNacimiento}"
+							styleClass="fecha" required="true" style="margin-right: 50px;"/>
+
+						<h:selectOneMenu id="generoUsuario" style="margin-right: 50px;"
+							value="#{informacionPersonalMB.informacionPersonalAModificar.genero}"
+							styleClass="combox" required="true">
+							<f:selectItem itemLabel="Hombre" itemValue="hombre" />
+							<f:selectItem itemLabel="Mujer" itemValue="mujer" />
+						</h:selectOneMenu>
+
+						<h:selectOneMenu styleClass="combox"
+							value="#{informacionPersonalMB.informacionPersonalAModificar.correo}" required="true">
+							<f:selectItem itemLabel="#{usuarioMB.correoPersona}"
+								itemValue="#{usuarioMB.correoPersona}" />
+						</h:selectOneMenu>
+					</h:panelGrid>
+
+					<h:panelGrid columns="3" style="margin-top: 10px;">
+						<h:outputLabel value="Estado civil" styleClass="lbl"
+							style="margin-right: 160px;" />
+						<h:outputLabel value="Departamento" styleClass="lbl"
+							style="margin-right: 100px;" />
+						<h:outputLabel value="Telefono" styleClass="lbl" />
+					</h:panelGrid>
+
+					<h:panelGrid columns="3">
+
+						<h:selectOneMenu id="estadoCivil"
+							value="#{informacionPersonalMB.informacionPersonalAModificar.estadoCivil}"
+							styleClass="combox" style="margin-right: 57px;" required="true">
+							<f:selectItems var="estadoCivil"
+								itemLabel="#{estadoCivil.descripcion}"
+								itemValue="#{estadoCivil.descripcion}"
+								value="#{estadoCivilMB.listaEstadoCivil}" />
+						</h:selectOneMenu>
+
+						<h:selectOneMenu id="departamento"
+							value="#{informacionPersonalMB.informacionPersonalAModificar.lugarNacimiento}"
+							styleClass="combox" style="margin-right: 10px;" required="true">
+							<f:selectItems var="departamentos"
+								itemLabel="#{departamentos.departamento}"
+								itemValue="#{departamentos.departamento}"
+								value="#{departamentoMB.listaDepartamento}" />
+						</h:selectOneMenu>
+
+						<h:inputText id="telefono1" maxlength="50"
+							value="#{informacionPersonalMB.informacionPersonalAModificar.telefono}"
+							styleClass="txtInformacion" required="true" />
+
+					</h:panelGrid>
+
+					<h:panelGrid columns="1">
+						<h:outputLabel value="Direccion" styleClass="lbl" />
+					</h:panelGrid>
+
+					<h:panelGrid columns="1">
+						<h:inputText id="direccionUsuario" maxlength="50"
+							value="#{informacionPersonalMB.informacionPersonalAModificar.direccion}"
+							styleClass="txtDireccion" required="true"/>
+					</h:panelGrid>
+
+				</div>
+
+				<!-- Botones guardar y salir -->
+				<h:panelGrid columns="2" style="margin-top: 20px;">
+
+					<h:commandButton value="Guardar" styleClass="btnPrimario"
+						style="margin:1px 10px 1px 1px;"
+						action="#{informacionPersonalMB.actualizarInformacionPersonal()}" />
+
+					<h:commandButton value="Regresar" styleClass="btnSecundario"
+						style="margin:1px 10px 1px 1px;"
+						action="/informacionUsuario/perfilUsuario" immediate="true" />
+				</h:panelGrid>
+
+			</div>
+
+		</div>
+
+	</h:form>
+</h:body>
+</html>

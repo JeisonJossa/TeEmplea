@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Te Emplea - Bienvenidos</title>
+	<h:outputStylesheet library="css" name="login.css" />
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="index.css" />
+</h:head>
+<h:body styleClass="bienvenida">
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:graphicImage value="/resources/images/IconTrabajo.png" />
+			<h:commandLink action="/index/index" value="Te Emplea"
+				styleClass="label" />
+		</h:panelGrid>
+		
+		<!--Menu bar de los botones index -->
+		<p:menubar styleClass="menuIndex">
+			<f:facet name="options">
+				<h:commandButton value="Iniciar Sesion" action="/login/login"
+					styleClass="btnIniciarSesion"  style="margin:1px 10px 1px 1px;" />
+				<h:commandButton value="Crear Cuenta"
+					action="#{usuarioMB.inicializarUsuario()}" styleClass="btnIniciarSesion"
+					style="margin:1px 10px 1px 1px;" />
+			</f:facet>
+		</p:menubar>
+		
+		<!-- Ver ofertas de empleo -->
+		<h:panelGrid columns="3" styleClass="verOfertas">
+			<h:graphicImage  value="/resources/images/iconBusquedaEmpleo.png" styleClass="imagenOferta"/>
+		</h:panelGrid>
+		
+		<!-- Publicar ofertas de empleo -->
+		<h:panelGrid columns="3" styleClass="publicarOferta">
+			<h:graphicImage id="imagenOferta" value="/resources/images/iconPublicarOferta.png" styleClass="imagenOferta"/>
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

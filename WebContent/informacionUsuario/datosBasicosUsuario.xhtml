@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Datos basicos usuario</title>
+	<h:outputStylesheet library="css" name="registroDatosUsuario.css" />
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputScript library="js" name="login.js" />
+</h:head>
+<h:body>
+	<h:form>
+		<h:panelGrid>
+			<h:outputLabel action="/index/index" value="Te Emplea"
+				styleClass="label" />
+		</h:panelGrid>
+
+		<h:panelGrid styleClass="contenedorDatos">
+
+			<h:panelGrid columns="2">
+				<h:outputLabel value="Ingrese Nombres"
+					styleClass="lblDatosBasicosUsuario" />
+				<h:outputLabel value="Ingrese Apellidos"
+					styleClass="lblDatosBasicosUsuario" />
+			</h:panelGrid>
+
+			<h:panelGrid columns="2">
+				<p:inputText value="" required="true" placeholder="Nombres"
+					styleClass="txtDatos" />
+				<p:inputText value="" required="true" placeholder="Apellidos"
+					styleClass="txtDatos" />
+			</h:panelGrid>
+
+			<p:outputLabel for="ludarNacimiento" value="Lugar de nacimiento" />
+			<p:selectOneMenu id="ludarNacimiento"
+				placeholder="Seleccione Departamento/Ciudad">
+				<f:selectItem itemLabel="Bogot&#225;, D.C." itemValue="bogota" />
+				<f:selectItem itemLabel="Amazonas" itemValue="amazonas" />
+				<f:selectItem itemLabel="Antioquia" itemValue="antioquia" />
+				<f:selectItem itemLabel="Arauca" itemValue="arauca" />
+				<f:selectItem
+					itemLabel="Archipi&#233;lago de San Andr&#233;s, Providencia y Santa Catalina"
+					itemValue="sanandres" />
+				<f:selectItem itemLabel="Atl&#225;ntico" itemValue="atlantico" />
+				<f:selectItem itemLabel="Bol&#237;var" itemValue="bolivar" />
+				<f:selectItem itemLabel="Boyac&#225;" itemValue="boyaca" />
+				<f:selectItem itemLabel="Caldas" itemValue="caldas" />
+				<f:selectItem itemLabel="Caquet&#225;" itemValue="caqueta" />
+				<f:selectItem itemLabel="Casanare" itemValue="casanare" />
+				<f:selectItem itemLabel="Cauca" itemValue="cauca" />
+				<f:selectItem itemLabel="Cesar" itemValue="cesar" />
+				<f:selectItem itemLabel="Choc&#243;" itemValue="choco" />
+				<f:selectItem itemLabel="C&#243;rdoba" itemValue="cordoba" />
+				<f:selectItem itemLabel="Cundinamarca" itemValue="cundinamarca" />
+				<f:selectItem itemLabel="Guain&#237;a" itemValue="guania" />
+				<f:selectItem itemLabel="Guaviare" itemValue="guaviare" />
+				<f:selectItem itemLabel="Huila" itemValue="huila" />
+				<f:selectItem itemLabel="La Guajira" itemValue="guajira" />
+				<f:selectItem itemLabel="Magdalena" itemValue="magdalena" />
+				<f:selectItem itemLabel="Meta" itemValue="meta" />
+				<f:selectItem itemLabel="Nari&#241;o" itemValue="narino" />
+				<f:selectItem itemLabel="Norte de Santander"
+					itemValue="nortesantander" />
+				<f:selectItem itemLabel="Putumayo" itemValue="putumayo" />
+				<f:selectItem itemLabel="Quindio" itemValue="quindio" />
+				<f:selectItem itemLabel="Risaralda" itemValue="risaralda" />
+				<f:selectItem itemLabel="Santander" itemValue="santander" />
+				<f:selectItem itemLabel="Sucre" itemValue="sucre" />
+				<f:selectItem itemLabel="Tolima" itemValue="tolima" />
+				<f:selectItem itemLabel="Valle del Cauca" itemValue="valle" />
+				<f:selectItem itemLabel="Vaup&#233;s" itemValue="vaupes" />
+				<f:selectItem itemLabel="Vichada" itemValue="vichada" />
+				<f:selectItem itemLabel="Extranjero" itemValue="extranjero" />
+			</p:selectOneMenu>
+
+			<p:outputLabel for="estadoCivil" value="Estado Civil" />
+			<p:selectOneMenu id="estadoCivil" >
+						<f:selectItem itemLabel="Soltero(a)" itemValue="soltero" />
+						<f:selectItem itemLabel="Casado(a)" itemValue="casado"/>
+						<f:selectItem itemLabel="Separado(a)/Divorciado(a)" itemValue="separado"/>
+						<f:selectItem itemLabel="Viudo(a)" itemValue="viudo"/>
+			</p:selectOneMenu>
+
+			<h:panelGrid>
+				<h:outputLabel value="Dirección" />
+				<p:inputText value="" styleClass="txtDatos" />
+			</h:panelGrid>
+
+			<h:panelGrid>
+				<h:outputLabel value="Telefono" />
+				<p:inputText value="" styleClass="txtDatos" />
+			</h:panelGrid>
+
+			<h:panelGrid>
+				<h:outputLabel value="Correo Electronico" />
+				<p:inputText value="" styleClass="txtDatos" />
+			</h:panelGrid>
+
+			<h:panelGrid columns="2">
+				<h:commandButton id="btnGuardar" action="1" value="Guardar"
+					styleClass="btnGuardar" />
+				<h:commandButton id="btnCancelar" action="1" value="Cancelar"
+					styleClass="btnCancelar" />
+			</h:panelGrid>
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

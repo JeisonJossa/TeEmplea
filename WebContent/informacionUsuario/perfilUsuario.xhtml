@@ -1,0 +1,494 @@
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
+<!-- <html xmlns="http://www.w3.org/1999/xhtml" -->
+<!-- 	xmlns:ui="http://java.sun.com/jsf/facelets" -->
+<!-- 	xmlns:f="http://java.sun.com/jsf/core" -->
+<!-- 	xmlns:h="http://java.sun.com/jsf/html" -->
+<!-- 	xmlns:p="http://primefaces.org/ui"> -->
+
+<!-- <h:head> -->
+<!-- 	<title>Perfil usuario</title> -->
+<!-- 	<h:outputStylesheet library="css" name="estilosGenerales.css" /> -->
+<!-- 	<h:outputStylesheet library="css" name="usuario.css" /> -->
+<!-- </h:head> -->
+
+<!-- <h:body id="bodyPerfilUsuario"> -->
+<!-- 	<!-- rendered="#{usuarioMB.validarSesion()}" --> -->
+
+	
+
+<!-- 	</h:form> -->
+
+<!-- 	<h:form prependId="false"> -->
+
+<!-- 		<h:panelGrid> -->
+<!-- 			<h:commandLink action="/informacionUsuario/perfilUsuario" -->
+<!-- 				value="Te Emplea" styleClass="lblTeEmplea" /> -->
+<!-- 			<h:outputLabel value="Hola " /> -->
+<!-- 			<h:outputLabel value="#{informacionPersonalMB.nombrePersona}" /> -->
+
+<!-- 		</h:panelGrid> -->
+
+<!-- 		<!--Menu bar de los botones usuario --> -->
+<!-- 		<p:menubar styleClass="menuIndex"> -->
+<!-- 			<f:facet name="options"> -->
+<!-- 				<h:commandButton value="Empleos" styleClass="btnTeEmplea" -->
+<!-- 					style="margin:1px 10px 1px 1px;" -->
+<!-- 					action="#{ofertaLaboralMB.ofertas()}" /> -->
+<!-- 			</f:facet> -->
+
+<!-- 			<f:facet name="options"> -->
+
+<!-- 				<h:commandButton value="Salir" action="#{usuarioMB.cerrarLogin()}" -->
+<!-- 					styleClass="btnSalir" style="margin:1px 10px 1px 1px;" /> -->
+<!-- 			</f:facet> -->
+<!-- 		</p:menubar> -->
+
+<!-- 		<!-- Aca se centra los datos del usuario --> -->
+
+<!-- 		<!-- boton descargar pdf --> -->
+<!-- 		<div class="conInformacionBasica"> -->
+
+<!-- 			<!-- agregar perfil profesional --> -->
+
+<!-- 			<p:fieldset legend="Opciones" toggleable="true" -->
+<!-- 				style="margin-top: 20px;"> -->
+
+<!-- 				<p:panelGrid columns="3"> -->
+<!-- 					<p:commandLink -->
+<!-- 						action="#{informacionPersonalMB.inicializarInformacionPersonal()}"> -->
+<!-- 						<h:graphicImage value="/resources/images/iconAgregar.png" /> -->
+<!-- 					</p:commandLink> -->
+
+<!-- 				</p:panelGrid> -->
+
+<!-- 				<p:dataGrid var="lista" id="perfil" -->
+<!-- 					value="#{informacionPersonalMB.perfilAmodificar}"> -->
+<!-- 					<p:column> -->
+<!-- 						<p:commandLink -->
+<!-- 							action="/informacionUsuario/actualizarInformacionPersonal"> -->
+<!-- 							<h:graphicImage value="/resources/images/iconEditar.png" /> -->
+<!-- 							<f:setPropertyActionListener value="#{lista}" -->
+<!-- 								target="#{informacionPersonalMB.informacionPersonalAModificar}" /> -->
+<!-- 						</p:commandLink> -->
+<!-- 					</p:column> -->
+
+<!-- 					<p:column> -->
+
+<!-- 					</p:column> -->
+<!-- 				</p:dataGrid> -->
+
+
+<!-- 			</p:fieldset> -->
+
+
+<!-- 			<div> -->
+
+<!-- 				Label perfil profesional -->
+<!-- 				<div style="margin-top: 20px;"> -->
+<!-- 					<h:outputLabel value="Perfil profesional" styleClass="lblTitulos" /> -->
+<!-- 				</div> -->
+
+<!-- 				campo ingresar descripcion -->
+<!-- 				<h:panelGrid columns="1" style="margin-top: 20px;"> -->
+<!-- 					<h:outputLabel value="#{informacionPersonalMB.descripcionPersona}" -->
+<!-- 						styleClass="perfilProfesional" /> -->
+<!-- 				</h:panelGrid> -->
+
+<!-- 				Label informacion basica -->
+<!-- 				<h:panelGrid columns="1" style="margin-top: 10px;"> -->
+<!-- 					<h:outputLabel value="Informacion basica" styleClass="lblTitulos" /> -->
+<!-- 				</h:panelGrid> -->
+
+<!-- 				<div> -->
+<!-- 					Label nombres -->
+<!-- 					Label apellidos -->
+<!-- 					Label No. identificacion -->
+<!-- 					<h:panelGrid columns="3" style="margin-top: 10px;"> -->
+<!-- 						<h:outputLabel value="Nombres" styleClass="lbl" -->
+<!-- 							style="margin-right: 185px;" /> -->
+<!-- 						<h:outputLabel value="Apellidos" styleClass="lbl" -->
+<!-- 							style="margin-right: 170px;" /> -->
+<!-- 						<h:outputLabel value="No. identificacion" styleClass="lbl" /> -->
+<!-- 					</h:panelGrid> -->
+
+<!-- 					txt nombres -->
+<!-- 					txt apellidos -->
+<!-- 					txt No. identificacion -->
+<!-- 					<h:panelGrid columns="3"> -->
+<!-- 						<h:outputLabel value="#{informacionPersonalMB.nombrePersona}" -->
+<!-- 							styleClass="lblCargarInfo" /> -->
+<!-- 						<h:outputLabel value="#{informacionPersonalMB.apellidoPersona}" -->
+<!-- 							styleClass="lblCargarInfo" /> -->
+
+<!-- 						<h:outputLabel value="#{usuarioMB.nombrePersona}" -->
+<!-- 							styleClass="lblCargarInfo" /> -->
+
+<!-- 					</h:panelGrid> -->
+
+<!-- 					<h:panelGrid columns="3" style="margin-top: 10px;"> -->
+<!-- 						<h:outputLabel value="Fecha de nacimiento" styleClass="lbl" -->
+<!-- 							style="margin-right: 88px;" /> -->
+<!-- 						<h:outputLabel value="Genero" styleClass="lbl" -->
+<!-- 							style="margin-right: 195px;" /> -->
+<!-- 						<h:outputLabel value="Correo" styleClass="lbl" /> -->
+<!-- 					</h:panelGrid> -->
+
+<!-- 					Correo del usuario -->
+<!-- 					<h:panelGrid columns="3"> -->
+
+<!-- 						<h:outputLabel id="fechaNacimiento" -->
+<!-- 							value="#{informacionPersonalMB.fechaNacimiento}" -->
+<!-- 							styleClass="lblCargarInfo" /> -->
+
+<!-- 						<h:outputLabel id="generoUsuario" -->
+<!-- 							value="#{informacionPersonalMB.generoPersona}" -->
+<!-- 							styleClass="lblCargarInfo" /> -->
+
+<!-- 						<h:outputLabel value="#{usuarioMB.correoPersona}" -->
+<!-- 							styleClass="lblCargarInfo" /> -->
+
+<!-- 					</h:panelGrid> -->
+
+<!-- 					<h:panelGrid columns="3" style="margin-top: 10px;"> -->
+<!-- 						<h:outputLabel value="Estado civil" styleClass="lbl" -->
+<!-- 							style="margin-right: 160px;" /> -->
+<!-- 						<h:outputLabel value="Departamento" styleClass="lbl" -->
+<!-- 							style="margin-right: 138px;" /> -->
+<!-- 						<h:outputLabel value="Telefono" styleClass="lbl" /> -->
+<!-- 					</h:panelGrid> -->
+
+<!-- 					<h:panelGrid columns="3"> -->
+
+<!-- 						<h:outputLabel id="estadoCivil" -->
+<!-- 							value="#{informacionPersonalMB.estadoCivilPersona}" -->
+<!-- 							styleClass="lblCargarInfo" /> -->
+
+<!-- 						<h:outputLabel id="departamento" -->
+<!-- 							value="#{informacionPersonalMB.departamentoPersona}" -->
+<!-- 							styleClass="lblCargarInfo" /> -->
+
+<!-- 						<h:outputLabel id="telefono1" -->
+<!-- 							value="#{informacionPersonalMB.numeroTelefonoPersona}" -->
+<!-- 							styleClass="lblCargarInfo" /> -->
+
+<!-- 					</h:panelGrid> -->
+
+<!-- 					<h:panelGrid columns="1"> -->
+<!-- 						<h:outputLabel value="Direccion" styleClass="lbl" /> -->
+<!-- 					</h:panelGrid> -->
+
+<!-- 					<h:panelGrid columns="1"> -->
+<!-- 						<h:outputLabel id="direccionUsuario" -->
+<!-- 							value="#{informacionPersonalMB.direccionPersona}" -->
+<!-- 							styleClass="lblCargarInfo" /> -->
+<!-- 					</h:panelGrid> -->
+
+<!-- 				</div> -->
+
+<!-- 			</div> -->
+
+<!-- 		</div> -->
+
+
+<!-- 		<p:fieldset legend="Experiencia laboral" toggleable="true" -->
+<!-- 			style="margin-top: 20px;"> -->
+
+<!-- 			<p:panelGrid> -->
+<!-- 				<p:commandLink -->
+<!-- 					action="#{experienciaLaboralMB.inicializarExperienciaLaboralACrear()}" -->
+<!-- 					style="margin-right: 10px;"> -->
+<!-- 					<h:graphicImage value="/resources/images/iconAgregar.png" /> -->
+<!-- 				</p:commandLink> -->
+
+<!-- 				<h:commandLink> -->
+<!-- 					<h:graphicImage url="/resources/images/iconDescargar.png" /> -->
+<!-- 					<p:dataExporter type="pdf" target="pdfExperiencias" -->
+<!-- 						fileName="experiencia" pageOnly="true" /> -->
+<!-- 				</h:commandLink> -->
+
+
+<!-- 			</p:panelGrid> -->
+
+<!-- 			<h:panelGrid id="panelExperiencias"> -->
+<!-- 				<p:dataTable id="pdfExperiencias" var="experienciaFila" -->
+<!-- 					value="#{usuarioMB.experienciaLista}"> -->
+
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Editar" /> -->
+<!-- 						</f:facet> -->
+
+<!-- 						<p:commandLink action="editarExperiencia"> -->
+<!-- 							<h:graphicImage value="/resources/images/iconEditar.png" /> -->
+<!-- 							<f:setPropertyActionListener value="#{experienciaFila}" -->
+<!-- 								target="#{experienciaLaboralMB.experienciaLaboralAModificar}" /> -->
+<!-- 						</p:commandLink> -->
+<!-- 					</p:column> -->
+
+
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Eliminar" /> -->
+<!-- 						</f:facet> -->
+
+<!-- 						<p:commandLink -->
+<!-- 							action="#{experienciaLaboralMB.borrarExperienciaLaboral()}" -->
+<!-- 							update="panelExperiencias"> -->
+
+<!-- 							<h:graphicImage value="/resources/images/iconEliminar.png" /> -->
+<!-- 							<p:confirm header="Confirmation" -->
+<!-- 								message="¿ESTA SEGURO QUE DESEA ELIMINAR?" -->
+<!-- 								icon="pi pi-exclamation-triangle" /> -->
+
+<!-- 							<f:setPropertyActionListener value="#{experienciaFila}" -->
+<!-- 								target="#{experienciaLaboralMB.experienciaLaboralAEliminar}" /> -->
+
+<!-- 							<p:confirmDialog global="true" showEffect="explode" -->
+<!-- 								hideEffect="bounce" closeOnEscape="true" responsive="true"> -->
+
+<!-- 								<p:commandButton value="SI LO ESTOY" type="button" -->
+<!-- 									styleClass="ui-confirmdialog-yes" /> -->
+<!-- 								<p:commandButton value="NO LO ESTOY" type="button" -->
+<!-- 									styleClass="ui-confirmdialog-no" /> -->
+<!-- 							</p:confirmDialog> -->
+<!-- 							<p:growl id="message" showDetail="true" /> -->
+<!-- 						</p:commandLink> -->
+<!-- 					</p:column> -->
+
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Empresa" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{experienciaFila.empresa}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Sector" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{experienciaFila.sector}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Cargo" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{experienciaFila.cargo}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Funciones" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{experienciaFila.funciones}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Fecha inical" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{experienciaFila.fechainicial}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Fecha final" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{experienciaFila.fechafinal}" /> -->
+<!-- 					</p:column> -->
+
+<!-- 				</p:dataTable> -->
+
+<!-- 			</h:panelGrid> -->
+
+<!-- 		</p:fieldset> -->
+
+<!-- 		<p:fieldset legend="Informacion academica" toggleable="true" -->
+<!-- 			style="margin-top: 20px;"> -->
+
+<!-- 			<p:panelGrid> -->
+<!-- 				<p:commandLink style="margin-right: 10px;" -->
+<!-- 					action="#{informacionAcademicaMB.inicializarInformacionAcademicaACrear()}"> -->
+<!-- 					<h:graphicImage value="/resources/images/iconAgregar.png" /> -->
+<!-- 				</p:commandLink> -->
+
+<!-- 				<h:commandLink> -->
+<!-- 					<h:graphicImage url="/resources/images/iconDescargar.png" /> -->
+<!-- 					<p:dataExporter type="pdf" target="pdfInformacionAcademica" -->
+<!-- 						fileName="experiencia" pageOnly="true" /> -->
+<!-- 				</h:commandLink> -->
+
+<!-- 			</p:panelGrid> -->
+
+<!-- 			<h:panelGrid id="panelInformacionAcademica"> -->
+<!-- 				<p:dataTable var="informacionAcademicaFila" -->
+<!-- 					id="pdfInformacionAcademica" value="#{usuarioMB.listaAcademica}"> -->
+
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Editar" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<p:commandLink action="editarInformacionAcademica"> -->
+<!-- 							<h:graphicImage value="/resources/images/iconEditar.png" /> -->
+<!-- 							<f:setPropertyActionListener value="#{informacionAcademicaFila}" -->
+<!-- 								target="#{informacionAcademicaMB.informacionAcademicaAModificar }"></f:setPropertyActionListener> -->
+<!-- 						</p:commandLink> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Eliminar" /> -->
+<!-- 						</f:facet> -->
+
+<!-- 						<p:commandLink -->
+<!-- 							action="#{informacionAcademicaMB.borrarInformacionAcademica()}" -->
+<!-- 							update="panelInformacionAcademica"> -->
+<!-- 							<h:graphicImage value="/resources/images/iconEliminar.png" /> -->
+<!-- 							<p:confirm header="Confirmation" -->
+<!-- 								message="¿ESTA SEGURO QUE DESEA ELIMINAR?" -->
+<!-- 								icon="pi pi-exclamation-triangle" /> -->
+
+<!-- 							<f:setPropertyActionListener value="#{informacionAcademicaFila}" -->
+<!-- 								target="#{informacionAcademicaMB.informacionAcademicaAEliminar}" /> -->
+<!-- 							<p:confirmDialog global="true" showEffect="explode" -->
+<!-- 								hideEffect="bounce" closeOnEscape="true" responsive="true"> -->
+<!-- 								<p:commandButton value="SI LO ESTOY" type="button" -->
+<!-- 									styleClass="ui-confirmdialog-yes" /> -->
+<!-- 								<p:commandButton value="NO LO ESTOY" type="button" -->
+<!-- 									styleClass="ui-confirmdialog-no" /> -->
+<!-- 							</p:confirmDialog> -->
+<!-- 							<p:growl id="message" showDetail="true" /> -->
+<!-- 						</p:commandLink> -->
+<!-- 					</p:column> -->
+
+
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Universidad" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{informacionAcademicaFila.universidad}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Nivel de estudios" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{informacionAcademicaFila.nivelEstudios}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Titulo" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{informacionAcademicaFila.titulo}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Fecha inicial" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{informacionAcademicaFila.fechaInicial}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Fecha Final" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{informacionAcademicaFila.fechaFinal}" /> -->
+<!-- 					</p:column> -->
+
+<!-- 				</p:dataTable> -->
+
+<!-- 			</h:panelGrid> -->
+<!-- 		</p:fieldset> -->
+
+
+<!-- 		<p:fieldset legend="Referencias" toggleable="true" -->
+<!-- 			style="margin-top: 20px;"> -->
+
+<!-- 			<p:panelGrid> -->
+<!-- 				<p:commandLink style="margin-right: 10px;" -->
+<!-- 					action="#{referenciasMB.inicializarReferenciasACrear()}"> -->
+<!-- 					<h:graphicImage value="/resources/images/iconAgregar.png" /> -->
+<!-- 				</p:commandLink> -->
+
+<!-- 				<h:commandLink> -->
+<!-- 					<h:graphicImage url="/resources/images/iconDescargar.png" /> -->
+<!-- 					<p:dataExporter type="pdf" target="pdfReferencias" -->
+<!-- 						fileName="experiencia" pageOnly="true" /> -->
+<!-- 				</h:commandLink> -->
+
+<!-- 			</p:panelGrid> -->
+
+<!-- 			<h:panelGrid id="panelReferencias"> -->
+<!-- 				<p:dataTable var="referenciasFila" id="pdfReferencias" -->
+<!-- 					value="#{usuarioMB.listaReferencias}"> -->
+
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Editar" /> -->
+<!-- 						</f:facet> -->
+
+<!-- 						<p:commandLink action="/informacionUsuario/editarReferencia"> -->
+<!-- 							<h:graphicImage value="/resources/images/iconEditar.png" /> -->
+<!-- 							<f:setPropertyActionListener value="#{referenciasFila}" -->
+<!-- 								target="#{referenciasMB.referenciasAModificar }" /> -->
+<!-- 						</p:commandLink> -->
+
+<!-- 					</p:column> -->
+
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Eliminar" /> -->
+<!-- 						</f:facet> -->
+
+<!-- 						<p:commandLink action="#{referenciasMB.borrarReferencias()}" -->
+<!-- 							update="panelReferencias"> -->
+<!-- 							<h:graphicImage value="/resources/images/iconEliminar.png" /> -->
+<!-- 							<p:confirm header="Confirmation" -->
+<!-- 								message="¿ESTA SEGURO QUE DESEA ELIMINAR?" -->
+<!-- 								icon="pi pi-exclamation-triangle" /> -->
+<!-- 							<f:setPropertyActionListener value="#{referenciasFila}" for="" -->
+<!-- 								target="#{referenciasMB.referenciasAEliminar}" /> -->
+<!-- 							<p:confirmDialog global="true" showEffect="explode" -->
+<!-- 								hideEffect="bounce" closeOnEscape="true" responsive="true"> -->
+<!-- 								<p:commandButton value="SI LO ESTOY" type="button" -->
+<!-- 									styleClass="ui-confirmdialog-yes" /> -->
+<!-- 								<p:commandButton value="NO LO ESTOY" type="button" -->
+<!-- 									styleClass="ui-confirmdialog-no" /> -->
+<!-- 							</p:confirmDialog> -->
+<!-- 							<p:growl id="message" showDetail="true" /> -->
+<!-- 						</p:commandLink> -->
+<!-- 					</p:column> -->
+
+
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Tipo Referencia" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{referenciasFila.tipoReferencia}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Nombre" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{referenciasFila.nombre}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Cargo" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{referenciasFila.cargo}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Telefono" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{referenciasFila.telefono}" /> -->
+<!-- 					</p:column> -->
+<!-- 					<p:column> -->
+<!-- 						<f:facet name="header"> -->
+<!-- 							<h:outputLabel value="Direccion" /> -->
+<!-- 						</f:facet> -->
+<!-- 						<h:outputLabel value="#{referenciasFila.direccion}" /> -->
+<!-- 					</p:column> -->
+
+<!-- 				</p:dataTable> -->
+
+<!-- 			</h:panelGrid> -->
+
+<!-- 		</p:fieldset> -->
+
+<!-- 	</h:form> -->
+<!-- </h:body> -->
+<!-- </html> -->

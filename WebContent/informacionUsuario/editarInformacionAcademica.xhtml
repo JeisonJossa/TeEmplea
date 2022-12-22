@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Editar informacion academica</title>
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="usuario.css" />
+</h:head>
+<body>
+	<h:form prependId="false">
+		<p:growl id="mensaje" life="1000" showDetail="true" />
+		<h:panelGrid>
+			<h:commandLink action="/informacionUsuario/perfilUsuario"
+				value="Te Emplea" styleClass="lblTeEmplea" immediate="true" />
+
+			<h:outputLabel value="#{informacionPersonalMB.nombrePersona}" />
+
+		</h:panelGrid>
+
+		<div class="conInformacionBasica">
+
+			<p:panelGrid>
+				<p:outputLabel>ACTUALIZACION DE INFORMACION ACADEMICA</p:outputLabel>
+			</p:panelGrid>
+
+			<p:panelGrid columns="2">
+
+				<p:outputLabel value="Identificacion" />
+
+				<h:selectOneMenu styleClass="txtInformacion"
+					value="#{informacionAcademicaMB.informacionAcademicaAModificar.identificacion}"
+					required="true" validatorMessage="Cargo. campo invalido"
+					requiredMessage="Cargo. campo requerido">
+					<f:selectItem itemLabel="#{informacionPersonalMB.cedulaPersona}"
+						itemValue="#{informacionPersonalMB.cedulaPersona}" />
+				</h:selectOneMenu>
+
+				<p:outputLabel value="Universidad" />
+				<p:inputText id="universidad"
+					value="#{informacionAcademicaMB.informacionAcademicaAModificar.universidad}"
+					maxlength="30" validatorMessage="Cargo. campo invalido"
+					required="true" requiredMessage="Cargo. campo requerido" />
+
+				<p:outputLabel value="Titulo" />
+				<p:inputText id="titulo"
+					value="#{informacionAcademicaMB.informacionAcademicaAModificar.titulo}"
+					maxlength="30" validatorMessage="Cargo. campo invalido"
+					required="true" requiredMessage="Cargo. campo requerido" />
+
+				<p:outputLabel  value="Nivel de Estudios" />
+				<p:inputText id="nivelEstudios"
+					value="#{informacionAcademicaMB.informacionAcademicaAModificar.nivelEstudios}"
+					maxlength="30" validatorMessage="Cargo. campo invalido"
+					required="true" requiredMessage="Cargo. campo requerido" />
+
+			</p:panelGrid>
+
+
+
+			<p:outputLabel value="Fecha de inicial" />
+			<p:datePicker id="fechaInicial"
+				value="#{informacionAcademicaMB.informacionAcademicaAModificar.fechaInicial}"
+				showIcon="true" style="width:auto" placeholder="Fecha de inicial" required="true"/>
+
+			<p:outputLabel  value="Fecha de final" />
+			<p:datePicker id="fechaFinal"
+				value="#{informacionAcademicaMB.informacionAcademicaAModificar.fechaFinal}"
+				showIcon="true" style="width:auto" placeholder="Fecha de final" required="true"/>
+
+
+
+			<h:panelGrid columns="2">
+			
+				<h:commandButton
+					action="#{informacionAcademicaMB.actualizarInformacionAcademica()}"
+					value="Guardar" styleClass="btnPrimario"/>
+					
+				<h:commandButton action="/informacionUsuario/perfilUsuario" value="Regresar"
+					immediate="true" styleClass="btnSecundario"/>
+			</h:panelGrid>
+		</div>
+	</h:form>
+</body>
+</html>

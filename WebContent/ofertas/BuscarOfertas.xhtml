@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Oferta Laboral</title>
+</h:head>
+<h:body id="principal" styleClass="principal">
+
+	<h:form>
+		<h1>Buscar ofertas de trabajo</h1>
+
+		<p:accordionPanel>
+
+			<p:tab title="Filtrar">
+				<h:panelGrid columns="1" layout="flex" contentStyleClass="p-align-baseline ui-fluid">
+					<p:inputText id="Cargo"
+						placeholder="Escribe cargo o area profesional " maxlength="50"
+						autocomplete="off" required="true" />
+					<p:selectOneMenu id="categoria" placeholder="Seleccione categoria">
+						<f:selectItem itemLabel="Categoria" itemValue="categoria" />
+					</p:selectOneMenu>
+					<p:selectOneMenu id="Departamento"
+						placeholder="Seleccione departamento">
+						<f:selectItem itemLabel="Seleccione departamento"
+							itemValue="departamento" />
+					</p:selectOneMenu>
+					<p:selectOneMenu id="salario" placeholder="Seleccione salario">
+						<f:selectItem itemLabel="Seleccione salario" itemValue="salario" />
+					</p:selectOneMenu>
+				</h:panelGrid>
+
+				<p:button value="Buscar" id="buscar"/>
+				<p:button value="Cancelar" id="cancelar"/>
+			</p:tab>
+		</p:accordionPanel>
+	</h:form>
+
+
+
+</h:body>
+</html>

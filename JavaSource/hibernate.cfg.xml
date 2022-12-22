@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+        <property name="hibernate.connection.password">S3nt1m13nt0</property>
+        <property name="hibernate.connection.url">jdbc:sqlserver://localhost:1433;databaseName=teemplea</property>
+        <property name="hibernate.connection.username">sa</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
+
+		<property name="current_session_context_class">thread</property>
+		
+		<mapping class="co.edu.ubosque.model.CrearCuenta" />
+		<mapping class="co.edu.ubosque.model.Departamento" />
+		<mapping class="co.edu.ubosque.model.EstadoCivil" />
+		<mapping class="co.edu.ubosque.model.ExperienciaLaboral" />
+		<mapping class="co.edu.ubosque.model.InformacionAcademica" />
+		<mapping class="co.edu.ubosque.model.InformacionPersonal" />
+		<mapping class="co.edu.ubosque.model.Sector" />		
+		<mapping class="co.edu.ubosque.model.Referencias" />
+		<mapping class="co.edu.ubosque.model.PerfilUsuario" />
+		<mapping class="co.edu.ubosque.model.TipoDocumento" />
+		<mapping class="co.edu.ubosque.model.Usuario" />	
+		<mapping class="co.edu.ubosque.model.OfertaLaboral" />		
+		<mapping class="co.edu.ubosque.model.Empresa" />
+		<mapping class="co.edu.ubosque.model.TipoReferencia" />
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Crear sector</title>
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="sectores.css" />
+</h:head>
+<h:body id="bodyCrearSector" styleClass="bodySectores">
+	<h:form prependId="false">
+
+		<h:panelGrid>
+			<h:commandLink action="/index/index" value="Te Emplea"
+				styleClass="lblTeEmplea" />
+		</h:panelGrid>
+
+		<p:panelGrid>
+			<p:outputLabel value="Creación de sectores"/>
+		</p:panelGrid>
+		
+		<p:panelGrid columns="3" id="panel2">
+			<p:outputLabel for="itNombre" value="Nombre" />
+			<p:inputText value="#{sectorMB.sectorACrear.nombre}" id="itNombre"
+				maxlength="30" validatorMessage="Nombre. campo invalido"
+				required="true" requiredMessage="Nombre. campo requerido" />
+			<p:message for="itNombre" />
+		</p:panelGrid>
+		
+		<p:panelGrid columns="2" style="margin-top: 20px;">
+			<h:commandButton action="#{sectorMB.guardarSector()}" value="Guardar"
+				update="panel2" styleClass="btnBotones" />
+			<h:commandButton action="listaSectores" value="Cancelar"
+				immediate="true" styleClass="btnBotones" />
+		</p:panelGrid>
+	</h:form>
+</h:body>
+</html>

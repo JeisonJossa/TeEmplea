@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Crear referencia</title>
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="usuario.css" />
+</h:head>
+
+<h:body id="bodyCrearExperiencia">
+
+	<h:form prependId="false">
+
+		<p:growl id="mensaje" life="1000" showDetail="true" />
+		<h:panelGrid>
+			<h:commandLink action="/informacionUsuario/perfilUsuario"
+				value="Te Emplea" styleClass="lblTeEmplea" immediate="true" />
+
+			<h:outputLabel value="#{informacionPersonalMB.nombrePersona}" />
+
+		</h:panelGrid>
+
+		<div class="conInformacionBasica">
+
+			<p:panelGrid>
+				<p:outputLabel>CREACION DE REFERENCIA</p:outputLabel>
+			</p:panelGrid>
+
+			<p:panelGrid columns="2">
+
+				<p:outputLabel value="Identificacion" />
+								
+				<h:selectOneMenu styleClass="txtInformacion"
+					value="#{referenciasMB.referenciasACrear.identificacion}"
+					required="true" validatorMessage="Cargo. campo invalido"
+					requiredMessage="Cargo. campo requerido">
+					<f:selectItem itemLabel="#{informacionPersonalMB.cedulaPersona}"
+						itemValue="#{informacionPersonalMB.cedulaPersona}" />
+				</h:selectOneMenu>
+
+				<p:outputLabel value="Tipo de referencia" />				
+				<p:selectOneMenu id="referencia"
+					value="#{referenciasMB.referenciasACrear.tipoReferencia}">
+					<f:selectItems var="referencia" itemLabel="#{referencia.nombre}"
+						itemValue="#{referencia.nombre}" value="#{tipoReferenciaMB.listaReferencias}" />
+				</p:selectOneMenu>
+				
+				<p:outputLabel value="Nombre" />
+				<p:inputText id="nombre"
+					value="#{referenciasMB.referenciasACrear.nombre}" maxlength="30"
+					validatorMessage="Cargo. campo invalido" required="true"
+					requiredMessage="Cargo. campo requerido" />
+				
+				<p:outputLabel value="Cargo" />
+				<p:inputText id="cargo"
+					value="#{referenciasMB.referenciasACrear.cargo}" maxlength="30"
+					validatorMessage="Cargo. campo invalido" required="true"
+					requiredMessage="Cargo. campo requerido" />
+				
+				<p:outputLabel value="Telefono" />
+				<p:inputText id="telefono"
+					value="#{referenciasMB.referenciasACrear.telefono}" maxlength="30"
+					validatorMessage="Cargo. campo invalido" required="true"
+					requiredMessage="Cargo. campo requerido" />
+				
+				<p:outputLabel value="Direccion" />
+				<p:inputText id="direccion"
+					value="#{referenciasMB.referenciasACrear.direccion}" maxlength="30"
+					validatorMessage="Cargo. campo invalido" required="true"
+					requiredMessage="Cargo. campo requerido" />
+				
+			</p:panelGrid>
+
+
+			<h:panelGrid columns="2" style="margin-top: 20px;">
+
+				<h:commandButton action="#{referenciasMB.guardarReferencias()}"
+					value="Guardar" styleClass="btnPrimario" />
+					
+				<h:commandButton action="perfilUsuario" value="Regresar"
+					immediate="true" styleClass="btnSecundario" />
+					
+			</h:panelGrid>
+
+		</div>
+	</h:form>
+</h:body>
+</html>

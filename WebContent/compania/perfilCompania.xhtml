@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Perfil compañia</title>
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="usuario.css" />
+</h:head>
+
+<h:body id="bodyPerfilCompania">
+
+	<h:form prependId="false">
+
+		<p:growl id="mensaje" life="1000" showDetail="true" />
+
+		<h:panelGrid>
+			<h:commandLink action="/compania/perfilCompania" value="Te Emplea"
+				styleClass="lblTeEmplea" immediate="true" />
+
+			<h:outputLabel value="#{usuarioMB.nombrePersona}" />
+
+		</h:panelGrid>
+
+		<!--Menu bar de los botones usuario -->
+		<p:menubar styleClass="menuIndex">
+
+			<f:facet name="options">
+				<h:commandButton value="Sectores" styleClass="btnTeEmplea"
+					style="margin:1px 10px 1px 1px;" action="/sector/listaSectores" />
+			</f:facet>
+
+
+			<f:facet name="options">
+				<h:commandButton value="Empleos" styleClass="btnTeEmplea"
+					style="margin:1px 10px 1px 1px;" action="/compania/publicarOferta" />
+			</f:facet>
+
+			<f:facet name="options">
+
+				<h:commandButton value="Salir" action="#{usuarioMB.cerrarLogin()}"
+					styleClass="btnSalir" style="margin:1px 10px 1px 1px;" />
+			</f:facet>
+		</p:menubar>
+
+		<div class="conInformacionBasica">
+
+			<p:fieldset legend="Opciones" toggleable="true"
+				style="margin-top: 20px;">
+
+				<p:commandLink
+					action="#{empresaMB.inicializarInformacionPersonal()}">
+					<h:graphicImage value="/resources/images/iconAgregar.png" />
+				</p:commandLink>
+			</p:fieldset>
+
+			<div>
+
+				<h:panelGrid style="margin-top: 10px;">
+					<h:outputLabel value="Informacion basica" styleClass="lblTitulos" />
+				</h:panelGrid>
+
+				<h:panelGrid columns="3" style="margin-top: 10px;">
+
+					<h:outputLabel value="Nombre compañia" styleClass="lbl"
+						style="margin-right: 110px;" />
+
+					<h:outputLabel value="Rut" style="margin-right: 220px;"
+						styleClass="lbl" />
+
+					<h:outputLabel value="Telefono" styleClass="lbl" />
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="3" style="margin-top: 10px;">
+
+					<h:outputLabel value="#{empresaMB.nombreEmpresa}"
+						style="margin-right: 10px;" styleClass="lblCargarInfo" />
+
+					<h:outputLabel value="#{empresaMB.rut}" style="margin-right: 10px;"
+						styleClass="lblCargarInfo" />
+
+					<h:outputLabel value="#{empresaMB.telefono}"
+						styleClass="lblCargarInfo" />
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="3" style="margin-top: 10px;">
+
+					<h:outputLabel value="Correo" styleClass="lbl"
+						style="margin-right: 200px;" />
+
+					<h:outputLabel value="Departamento" styleClass="lbl"
+						style="margin-right: 140px;" />
+
+					<h:outputLabel value="Direccion" styleClass="lbl" />
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="3" style="margin-top: 10px;">
+
+					<h:outputLabel value="#{empresaMB.correo}"
+						style="margin-right: 10px;" styleClass="lblCargarInfo" />
+
+					<h:outputLabel value="#{empresaMB.departamento}"
+						style="margin-right: 10px;" styleClass="lblCargarInfo" />
+
+					<h:outputLabel value="#{empresaMB.direccion}"
+						styleClass="lblCargarInfo" />
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="3" style="margin-top: 10px;">
+
+					<h:outputLabel value="Tipo compañia" styleClass="lbl"
+						style="margin-right: 135px;" />
+
+					<h:outputLabel value="Sector" styleClass="lbl"
+						style="margin-right: 200px;" />
+
+					<h:outputLabel value="Descripcion" styleClass="lbl" />
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="3" style="margin-top: 10px;">
+
+					<h:outputLabel value="#{empresaMB.tipoCompañia}"
+						style="margin-right: 10px;" styleClass="lblCargarInfo" />
+
+					<h:outputLabel value="#{empresaMB.sector}"
+						style="margin-right: 10px;" styleClass="lblCargarInfo" />
+
+					<h:outputLabel value="#{empresaMB.desripcion}"
+						styleClass="lblCargarInfo" />
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="1" style="margin-top: 10px;">
+
+					<h:outputLabel value="Pagina web" styleClass="lbl" />
+
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="1" style="margin-top: 10px;">
+
+					<h:outputLabel value="#{empresaMB.pagina}"
+						styleClass="lblCargarInfo" />
+
+				</h:panelGrid>
+
+				<h:panelGrid style="margin-top: 10px;">
+					<h:outputLabel value="Datos de contacto" styleClass="lblTitulos" />
+				</h:panelGrid>
+
+				<h:panelGrid columns="3" style="margin-top: 10px;">
+
+					<h:outputLabel value="Nombres" styleClass="lbl"
+						style="margin-right: 180px;" />
+
+					<h:outputLabel value="Apellidos" styleClass="lbl"
+						style="margin-right: 175px;" />
+
+					<h:outputLabel value="Cargo" styleClass="lbl"
+						style="margin-right: 200px;" />
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="3" style="margin-top: 10px;">
+
+					<h:outputLabel value="#{empresaMB.nombres}"
+						style="margin-right: 10px;" styleClass="lblCargarInfo" />
+
+					<h:outputLabel value="#{empresaMB.apellidos}"
+						style="margin-right: 10px;" styleClass="lblCargarInfo" />
+
+					<h:outputLabel value="#{empresaMB.cargo}"
+						styleClass="lblCargarInfo" />
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="2" style="margin-top: 10px;">
+
+					<h:outputLabel value="Telefono movil" styleClass="lbl"
+						style="margin-right: 130px;" />
+
+					<h:outputLabel value="Telefono fijo" styleClass="lbl" />
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="2" style="margin-top: 10px;">
+
+					<h:outputLabel value="#{empresaMB.telefonoMovil}"
+						style="margin-right: 10px;" styleClass="lblCargarInfo" />
+
+					<h:outputLabel value="#{empresaMB.telefonoFijo}"
+						style="margin-right: 10px;" styleClass="lblCargarInfo" />
+
+				</h:panelGrid>
+
+			</div>
+
+		</div>
+
+		<p:fieldset legend="Ofertas publicadas" toggleable="true"
+			style="margin-top: 20px;">
+
+			<h:panelGrid>
+
+			</h:panelGrid>
+
+			<p:commandLink action="#{ofertaLaboralMB.inicializarOfertaLaboral()}"
+				immediate="true">
+				<h:graphicImage value="/resources/images/iconAgregar.png" />
+			</p:commandLink>
+
+			<h:panelGrid id="panelOfertas">
+				<p:dataTable var="ofertaFila"
+					value="#{ofertaLaboralMB.listaOfertaLaboral}">
+
+					<p:column>
+						<f:facet name="header">
+							<h:outputLabel value="Editar" />
+						</f:facet>
+						<p:commandLink action="/compania/actualizarOferta">
+							<h:graphicImage value="/resources/images/iconEditar.png" />
+							<f:setPropertyActionListener value="#{ofertaFila}"
+								target="#{ofertaLaboralMB.ofertaLaboralAModificar}"></f:setPropertyActionListener>
+						</p:commandLink>
+					</p:column>
+					
+					<p:column>
+					
+						<f:facet name="header">
+							<h:outputLabel value="Eliminar" />
+						</f:facet>
+
+						<p:commandLink action="#{ofertaLaboralMB.borrarOfertaLaboral()}"
+							update="panelOfertas">
+							
+							<h:graphicImage value="/resources/images/iconEliminar.png" />
+							<p:confirm header="Confirmation"
+								message="¿ESTA SEGURO QUE DESEA ELIMINAR?"
+								icon="pi pi-exclamation-triangle" />
+								
+							<f:setPropertyActionListener value="#{ofertaFila}" 
+								target="#{ofertaLaboralMB.ofertaLaboralAEliminar}" />
+								
+							<p:confirmDialog global="true" showEffect="explode"
+								hideEffect="bounce" closeOnEscape="true" responsive="true">
+								
+								<p:commandButton value="SI LO ESTOY" type="button"
+									styleClass="ui-confirmdialog-yes" />
+									
+								<p:commandButton value="NO LO ESTOY" type="button"
+									styleClass="ui-confirmdialog-no" />
+									
+							</p:confirmDialog>
+							
+							<p:growl id="message" showDetail="true" />
+							
+						</p:commandLink>
+					</p:column>
+
+					<p:column>
+						<f:facet name="header">
+							<h:outputLabel value="Empresa" />
+						</f:facet>
+						<h:outputLabel value="#{ofertaFila.nombreEmpresa}" />
+					</p:column>
+
+					<p:column>
+						<f:facet name="header">
+							<h:outputLabel value="Titulo" />
+						</f:facet>
+						<h:outputLabel value="#{ofertaFila.titulo}" />
+					</p:column>
+
+					<p:column>
+						<f:facet name="header">
+							<h:outputLabel value="Area" />
+						</f:facet>
+						<h:outputLabel value="#{ofertaFila.categoria}" />
+					</p:column>
+
+					<p:column>
+						<f:facet name="header">
+							<h:outputLabel value="Cargo" />
+						</f:facet>
+						<h:outputLabel value="#{ofertaFila.cargo}" />
+					</p:column>
+
+
+					<p:column>
+						<f:facet name="header">
+							<h:outputLabel value="Salario" />
+						</f:facet>
+						<h:outputLabel value="#{ofertaFila.salario}" />
+					</p:column>
+
+				</p:dataTable>
+
+			</h:panelGrid>
+
+		</p:fieldset>
+
+	</h:form>
+
+</h:body>
+</html>

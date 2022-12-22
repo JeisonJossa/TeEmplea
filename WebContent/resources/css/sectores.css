@@ -1,0 +1,41 @@
+.bodySectores{
+	margin: 2px;
+	background-color: #ffffff;
+}
+
+.btnVolver {
+	color: #fff;
+	width: 150px;
+	height: 30px;
+	border: 0px solid white;
+	border-radius: 28px;
+	background: #0a66c2;
+	cursor: pointer;
+	text-align: center;
+	font-size: 14px;
+	font-family: 'Muli', sans-serif;
+
+}
+
+.btnBotones {
+	color: #fff;
+	width: 150px;
+	height: 25px;
+	border: 0px solid white;
+	border-radius: 28px;
+	background-color: #0a66c2;
+	cursor: pointer;
+	text-align: center;
+	font-size: 12px;
+	font-family: 'Muli', sans-serif;
+}
+
+.panelLista{
+	color: blue;
+	width: 100%;
+	text-align: center;
+	justify-content: center;
+	text-decoration: none;
+	font-size: 14px;
+	font-family: 'Muli', sans-serif;
+}

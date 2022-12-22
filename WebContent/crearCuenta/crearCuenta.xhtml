@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+
+	<title>Crear Cuenta</title>
+	<h:outputStylesheet library="css" name="crearCuenta.css" />
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+
+</h:head>
+
+<h:body id="bodyCrearCuenta" styleClass="bodyCrearCuenta">
+
+	<h:form>
+		<p:growl id="mensaje" life="1000" showDetail="true" />
+		<h:panelGrid>
+			<h:commandLink action="/index/index" value="Te Emplea"
+				styleClass="label" immediate="true" />
+		</h:panelGrid>
+	</h:form>
+
+	<h:form prependId="flase" id="formCrearCuenta">
+
+		<div class="crearCuentaPrincipal">
+			<div class="crearCuenta">
+
+				<p:panelGrid>
+					<h:graphicImage value="/resources/images/IconTrabajo.png"
+						styleClass="iconTrabajo" />
+				</p:panelGrid>
+
+				<h:panelGrid columns="1">
+					<p:outputLabel value="No. documento" styleClass="lblNoDocumento" />
+
+				</h:panelGrid>
+
+				<h:panelGrid columns="2">
+					<h:selectOneMenu id="tipoDocumento"
+						value="#{usuarioMB.usuarioACrear.tipoDocumento}"
+						styleClass="cboTipoDocumento">
+						<f:selectItems var="tipoDocumento"
+							itemLabel="#{tipoDocumento.sigla}"
+							itemValue="#{tipoDocumento.id}"
+							value="#{tipoDocumentoMB.listaTipoDocumento}" />
+					</h:selectOneMenu>
+
+					<p:inputText id="txtIdentificacion" placeholder="Ingrese documento"
+						styleClass="txtDocumento" minlength="8" maxlength="15"
+						value="#{usuarioMB.usuarioACrear.identificacion}" required="true">
+						<f:validateLength minimum="8" maximum="15"></f:validateLength>
+					</p:inputText>
+				</h:panelGrid>
+
+				<h:panelGrid style="margin-top: 20px;">
+					<h:outputLabel value="Correo electronico" styleClass="lblTexto" />
+					<p:inputText id="txtCorreo" type="email"
+						placeholder="Ingrese correo" styleClass="textLogin" maxlength="50"
+						value="#{usuarioMB.usuarioACrear.correo}" required="true">
+						<f:validateLength minimum="8" maximum="50"></f:validateLength>
+					</p:inputText>
+				</h:panelGrid>
+
+				<div style="margin-top: 20px;">
+					<h:outputLabel value="Contraseña (8 caracteres o mas)"
+						styleClass="lblTexto" />
+					<p:password id="txtContrasena" placeholder="Ingrese contraseña"
+						styleClass="textLogin" maxlength="50"
+						value="#{usuarioMB.usuarioACrear.contrasena}" required="true"
+						validatorMessage="La contraseña debe tener caracteres especiales"
+						requiredMessage="La contraseña debe tener caracteres especiales">
+						<f:validateLength minimum="8" maximum="20" />
+
+					</p:password>
+				</div>
+				<h:panelGrid columns="2" style="margin-top: 20px;" cellpadding="5">
+					<h:outputText value="Cuenta corporativa: " styleClass="lblTexto" />
+					<h:selectOneMenu value="#{usuarioMB.usuarioACrear.perfil}"
+						styleClass="btnSelectBoolean">
+						<f:selectItem itemLabel="No" itemValue="1" />
+						<f:selectItem itemLabel="Si" itemValue="2" />
+					</h:selectOneMenu>
+				</h:panelGrid>
+
+				<div>
+					<h:commandButton value="Guardar" styleClass="btnPrimario"
+						action="#{usuarioMB.validarDatos()}" update="formCrearCuenta" />
+				</div>
+			</div>
+
+		</div>
+
+	</h:form>
+</h:body>
+</html>

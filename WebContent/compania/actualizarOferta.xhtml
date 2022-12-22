@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Publicar oferta laboral</title>
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="usuario.css" />
+	<h:outputStylesheet library="css" name="crearCuenta.css" />
+</h:head>
+<h:body id="principal" styleClass="principal">
+
+	<h:form>
+
+		<p:growl id="mensaje" life="1000" showDetail="true" />
+		<h:panelGrid>
+			<h:commandLink action="/compania/perfilCompania" value="Te Emplea"
+				styleClass="lblTeEmplea" immediate="true" />
+
+			<h:outputLabel value="#{informacionPersonalMB.nombrePersona}" />
+
+		</h:panelGrid>
+
+		<div class="conInformacionBasica">
+
+			<h:panelGrid style="margin-top: 10px;">
+				<h:outputLabel value="Datos de la oferta" styleClass="lblTitulos" />
+			</h:panelGrid>
+
+			<p:panelGrid columns="1" layout="flex"
+				contentStyleClass="p-align-baseline ui-fluid">
+
+				<p:outputLabel value="Nombre empresa" />
+				<h:selectOneMenu id="empresa" placeholder="Seleccione categoria"
+					styleClass="combox1"
+					value="#{ofertaLaboralMB.ofertaLaboralAModificar.nombreEmpresa}">
+					<f:selectItem var="empresa" itemLabel="#{empresaMB.nombreEmpresa}"
+						itemValue="#{empresaMB.nombreEmpresa}" />
+				</h:selectOneMenu>
+
+				<p:outputLabel value="Titulo" />
+				<p:inputText id="tituloOferta"
+					placeholder="Titulo de la oferta de trabajo" maxlength="50"
+					value="#{ofertaLaboralMB.ofertaLaboralAModificar.titulo}" />
+
+				<p:outputLabel value="Descripcion" />
+				<p:inputText id="descripcionOferta"
+					placeholder="Breve descripcion de la oferta" maxlength="150"
+					value="#{ofertaLaboralMB.ofertaLaboralAModificar.desripcion}" />
+
+				<p:outputLabel value="¿Desea destacar su oferta?" />
+				<h:selectOneMenu
+					value="#{ofertaLaboralMB.ofertaLaboralAModificar.destacado}"
+					styleClass="btnSelectBoolean">
+					<f:selectItem itemLabel="No" itemValue="No" />
+					<f:selectItem itemLabel="Si" itemValue="Si" />
+				</h:selectOneMenu>
+
+				<p:outputLabel value="Departamento/ciudad" />
+				<h:selectOneMenu id="departamento" styleClass="combox1"
+					value="#{ofertaLaboralMB.ofertaLaboralAModificar.departamento}"
+					style="margin-right: 10px;" required="true">
+					<f:selectItems var="departamentos"
+						itemLabel="#{departamentos.departamento}"
+						itemValue="#{departamentos.departamento}"
+						value="#{departamentoMB.listaDepartamento}" />
+				</h:selectOneMenu>
+
+				<p:outputLabel value="Sector" />
+				<h:selectOneMenu id="categoria" styleClass="combox1"
+					placeholder="Seleccione categoria"
+					value="#{ofertaLaboralMB.ofertaLaboralAModificar.categoria}">
+					<f:selectItems var="sector" itemLabel="#{sector.nombre}"
+						itemValue="#{sector.nombre}" value="#{sectorMB.listaSectores}" />
+				</h:selectOneMenu>
+
+				<p:outputLabel for="fechaPublicacion" value="Fecha de publicacion" />
+				<p:datePicker id="fechaPublicacion" showIcon="true"
+					style="width:auto" placeholder="Fecha de publicacion"
+					value="#{ofertaLaboralMB.ofertaLaboralAModificar.fecha}" />
+
+				<p:outputLabel value="Salario Ofrecido(aprox)" />
+				<p:inputText id="salario"
+					value="#{ofertaLaboralMB.ofertaLaboralAModificar.salario}" />
+
+				<p:outputLabel value="cargo" />
+				<p:inputText
+					value="#{ofertaLaboralMB.ofertaLaboralAModificar.cargo}" />
+
+
+
+				<h3>Detalles</h3>
+				<p:editor height="300" style="margin-bottom:10px"
+					value="#{ofertaLaboralMB.ofertaLaboralAModificar.detalles}" />
+			</p:panelGrid>
+
+			<h:panelGrid columns="2">
+
+				<h:commandButton
+					action="#{ofertaLaboralMB.actualizarOfertaLaboral()}"
+					value="Guardar" id="Guardar" styleClass="btnPrimario"
+					style="margin:1px 10px 1px 1px;" />
+
+				<h:commandButton value="Regresar" id="Regresar"
+					styleClass="btnSecundario" immediate="true"
+					style="margin:1px 10px 1px 1px;" action="/compania/perfilCompania" />
+
+			</h:panelGrid>
+
+		</div>
+	</h:form>
+</h:body>
+</html>

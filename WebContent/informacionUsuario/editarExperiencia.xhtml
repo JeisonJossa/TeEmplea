@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Editar experiencia</title>
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="usuario.css" />
+</h:head>
+<body>
+	<h:form prependId="false">
+
+		<p:growl id="mensaje" life="1000" showDetail="true" />
+
+		<h:panelGrid>
+			<h:commandLink action="/informacionUsuario/perfilUsuario"
+				value="Te Emplea" styleClass="lblTeEmplea" immediate="true" />
+		</h:panelGrid>
+
+		<div class="conInformacionBasica">
+			<p:panelGrid columns="3">
+
+				<p:outputLabel for="identificacion" value="Identificacion" />
+
+				<h:selectOneMenu id="identificacion" styleClass="txtInformacion"
+					value="#{experienciaLaboralMB.experienciaLaboralAModificar.identificacion}"
+					required="true">
+					<f:selectItem itemLabel="#{usuarioMB.nombrePersona}"
+						itemValue="#{usuarioMB.nombrePersona}" />
+
+				</h:selectOneMenu>
+				<p:message for="identificacion" />
+
+				<p:outputLabel for="compania" value="Compañia" />
+				<p:inputText id="compania"
+					value="#{experienciaLaboralMB.experienciaLaboralAModificar.empresa}"
+					maxlength="30" validatorMessage="Cargo. campo invalido"
+					required="true" requiredMessage="Cargo. campo requerido" />
+				<p:message for="compania" />
+
+				<p:outputLabel for="cargo" value="Cargo" />
+				<p:inputText id="cargo"
+					value="#{experienciaLaboralMB.experienciaLaboralAModificar.cargo}"
+					maxlength="30" validatorMessage="Cargo. campo invalido"
+					required="true" requiredMessage="Cargo. campo requerido" />
+				<p:message for="cargo" />
+			</p:panelGrid>
+
+			<p:panelGrid columns="2">
+				<p:outputLabel for="sector" value="Sector" />
+
+				<p:selectOneMenu id="sector"
+					value="#{experienciaLaboralMB.experienciaLaboralAModificar.sector}">
+					<f:selectItems var="sector" itemLabel="#{sector.nombre}"
+						itemValue="#{sector.nombre}" value="#{sectorMB.listaSectores}" />
+				</p:selectOneMenu>
+			</p:panelGrid>
+
+			<p:panelGrid columns="3">
+				<p:outputLabel for="funciones" value="Funciones" />
+				<p:inputText id="funciones"
+					value="#{experienciaLaboralMB.experienciaLaboralAModificar.funciones}"
+					maxlength="50" validatorMessage="Cargo. campo invalido"
+					required="true" requiredMessage="Cargo. campo requerido" />
+				<p:message for="funciones" />
+
+			</p:panelGrid>
+			<p:outputLabel for="fechaInicial" value="Fecha de inicial" />
+			<p:datePicker id="fechaInicial"
+				value="#{experienciaLaboralMB.experienciaLaboralAModificar.fechainicial}"
+				showIcon="true" style="width:auto" placeholder="Fecha de inicial" />
+
+			<p:outputLabel for="fechaFinal" value="Fecha de final" />
+			<p:datePicker id="fechaFinal"
+				value="#{experienciaLaboralMB.experienciaLaboralAModificar.fechafinal}"
+				showIcon="true" style="width:auto" placeholder="Fecha de final" />
+
+			<h:panelGrid columns="2">
+
+				<h:commandButton
+					action="#{experienciaLaboralMB.actualizarExperienciaLaboral()}"
+					value="Guardar" styleClass="btnPrimario" />
+				<h:commandButton action="/informacionUsuario/perfilUsuario"
+					value="Regresar" immediate="true" styleClass="btnSecundario" />
+
+			</h:panelGrid>
+
+		</div>
+	</h:form>
+</body>
+</html>

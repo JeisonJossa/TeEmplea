@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Login Usuario</title>
+	<h:outputStylesheet library="css" name="login.css" />
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+</h:head>
+<h:body id="principal" styleClass="principal">
+
+	<h:form>
+
+		<p:messages id="messages" showDetail="true" closable="true">
+			<p:autoUpdate />
+		</p:messages>
+
+		<h:panelGrid>
+			<h:commandLink action="/index/index" value="Te Emplea"
+				styleClass="label" />
+		</h:panelGrid>
+
+		<div class="contenedor">
+			<p:panelGrid>
+				<h:graphicImage value="/resources/images/IconTrabajo.png"
+					styleClass="iconTrabajo" />
+				<h:outputLabel value="¡Te damos la bienvenida de nuevo!"
+					styleClass="label" />
+			</p:panelGrid>
+
+			<div class="iPrincipal">
+
+				<p:column>
+					<p:commandLink>
+						<h:graphicImage id="imagenLogin"
+							value="/resources/images/iconUsuario.png"
+							styleClass="imagenLogin" />
+					</p:commandLink>
+				</p:column>
+
+				<div style="margin-top: 15px;">
+					<h:graphicImage value="/resources/images/IconEmail.png" />
+					<p:inputText id="usernameLogin" maxlength="30"
+						placeholder="Usuario" styleClass="textLogin"
+						style="margin-top: 3px;" value="#{usuarioMB.validarUsuario.identificacion}" />
+				</div>
+
+				<div style="margin-top: 15px;">
+					<h:graphicImage value="/resources/images/IconContrasena.png" />
+					<p:password id="passwordLogin" maxlength="30"
+						placeholder="Contraseña" styleClass="textLogin"
+						style="margin-top: 3px;" value="#{usuarioMB.validarUsuario.contrasena}"/>
+				</div>
+
+				<div>
+					<h:commandButton id="btnIngresar" value="Ingresar"
+				 styleClass="btnIngresar" action="#{usuarioMB.validarLogin()}" />
+				</div>
+
+				<h:panelGrid>
+					<h:commandButton id="btnRegistrar" value="Crear cuenta"
+						action="#{usuarioMB.inicializarUsuario()}" styleClass="btnSecundario" />
+				</h:panelGrid>
+			</div>
+		</div>
+	</h:form>
+</h:body>
+</html>

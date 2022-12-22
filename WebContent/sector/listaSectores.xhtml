@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Lista Sectores</title>
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="sectores.css" />
+</h:head>
+<h:body id="bodySectores" styleClass="bodySectores">
+	<h:form prependId="false">
+
+		<h:panelGrid>
+			<h:commandLink action="/index/index" value="Te Emplea"
+				styleClass="lblTeEmplea" />
+		</h:panelGrid>
+	
+		<h:panelGrid>
+			<h:outputLabel value="Listado de sectores empresariales" />
+		</h:panelGrid>
+		
+		<p:panelGrid>
+			<p:commandLink action="#{sectorMB.inicializarSectorACrear()}">
+				<h:graphicImage value="/resources/images/iconAgregar1.png" />
+			</p:commandLink>
+		</p:panelGrid>
+		
+		<h:panelGrid id="panelLista" styleClass="panelLista">
+			<p:dataTable var="sectorFila" value="#{sectorMB.listaSectores}">
+			
+				<p:column>
+					<f:facet name="header">
+						<h:outputLabel value="Editar" />
+					</f:facet>
+					<p:commandLink action="editarSector" >
+						<h:graphicImage value="/resources/images/iconEditar.png" />
+						<f:setPropertyActionListener value="#{sectorFila}" target="#{sectorMB.sectorAModificar}" />
+					</p:commandLink>
+				</p:column>
+				
+				<p:column>
+					<p:growl id="message" showDetail="true" />
+					<f:facet name="header">
+						<h:outputLabel value="eliminar" />
+					</f:facet>
+					<p:commandLink action="#{sectorMB.borrarSector()}" update="panelLista">
+						<h:graphicImage value="/resources/images/iconEliminar.png" />
+						<p:confirm header="Confirmación" message="Esta seguro que desea eliminar el sector" />
+						<f:setPropertyActionListener value="#{sectorFila}" target="#{sectorMB.sectorAEliminar}" />
+					</p:commandLink>
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">
+						<h:outputLabel value="Id" />
+					</f:facet>
+					<h:outputLabel value="#{sectorFila.id}" />
+				</p:column>
+				
+				<p:column>
+					<f:facet name="header">
+						<h:outputLabel value="Nombre" />
+					</f:facet>
+					<h:outputLabel value="#{sectorFila.nombre}" />
+				</p:column>
+				
+			</p:dataTable>
+		</h:panelGrid>
+
+		<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+			<p:commandButton value="Aceptar" type="button" styleClass="ui-confirmdialog-yes" icon="pi pi-check" />
+			<p:commandButton value="Cancelar" type="button" styleClass="ui-confirmdialog-no" icon="pi pi-times" />
+		</p:confirmDialog>
+		
+		<h:panelGrid style="margin-top: 20px;">
+			<h:commandButton id="btnVolver" action="/compania/perfilCompania" value="volver" styleClass="btnVolver"/>
+		</h:panelGrid>
+	</h:form>
+</h:body>
+</html>

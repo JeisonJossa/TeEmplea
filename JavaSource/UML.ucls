@@ -1,0 +1,1947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="co.edu.ubosque.dao.mb.EstadoCivilMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/EstadoCivilMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="228" x="15" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="2" language="java" name="co.edu.ubosque.dao.ITipoDocumentoDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/ITipoDocumentoDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="256" x="3764" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="3" language="java" name="co.edu.ubosque.model.Sector" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/Sector.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="137" x="6631" y="3343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="co.edu.ubosque.model.Usuario" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/Usuario.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="423" width="172" x="2922" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="co.edu.ubosque.logic.TipoReferenciaLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/TipoReferenciaLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="234" x="3197" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="co.edu.ubosque.dao.mb.UsuarioMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/UsuarioMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="981" width="300" x="3009" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="co.edu.ubosque.dao.IEmpresaDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/IEmpresaDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="222" x="2018" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="8" language="java" name="co.edu.ubosque.dao.ITipoReferenciaDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/ITipoReferenciaDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="234" x="3155" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="9" language="java" name="co.edu.ubosque.dao.mb.ExperienciaLaboralMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/ExperienciaLaboralMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="531" width="326" x="283" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="co.edu.ubosque.logic.TipoDocumentoLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/TipoDocumentoLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="256" x="3785" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="co.edu.ubosque.model.PerfilUsuario" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/PerfilUsuario.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="228" x="1675" y="3343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="co.edu.ubosque.logic.UsuarioLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/UsuarioLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="182" x="2567" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="co.edu.ubosque.model.Referencias" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/Referencias.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="495" width="263" x="6114" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="co.edu.ubosque.dao.impl.SectorDaoSQLServerHibernate" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/SectorDaoSQLServerHibernate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="201" x="5804" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="co.edu.ubosque.logic.DepartamentoLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/DepartamentoLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="242" x="4862" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="co.edu.ubosque.dao.impl.DepartamentoDaoSQLServerHibernate" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/DepartamentoDaoSQLServerHibernate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="244" x="4186" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="co.edu.ubosque.dao.impl.ReferenciasDaoSQLServerHibernate" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/ReferenciasDaoSQLServerHibernate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="232" x="5834" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="co.edu.ubosque.dao.mb.TipoReferenciaMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/TipoReferenciaMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="256" x="3452" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="co.edu.ubosque.db.ConexionSQLServerHibernate" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/db/ConexionSQLServerHibernate.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="211" x="3492" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="20" language="java" name="co.edu.ubosque.dao.IInformacionPersonalDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/IInformacionPersonalDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="343" x="781" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="21" language="java" name="co.edu.ubosque.dao.IUsuarioDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/IUsuarioDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="182" x="2698" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="22" language="java" name="co.edu.ubosque.model.OfertaLaboral" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/OfertaLaboral.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="711" width="394" x="5659" y="3343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="23" language="java" name="co.edu.ubosque.dao.IDepartamentoDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/IDepartamentoDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="242" x="4608" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="24" language="java" name="co.edu.ubosque.dao.mb.PerfilUsuario" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/PerfilUsuario.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="110" x="693" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="co.edu.ubosque.model.TipoReferencia" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/TipoReferencia.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="261" width="166" x="3410" y="3343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="co.edu.ubosque.dao.mb.InformacionAcademicaMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/InformacionAcademicaMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="344" x="5167" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="27" language="java" name="co.edu.ubosque.dao.IInformacionAcademicaDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/IInformacionAcademicaDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="329" x="4512" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="28" language="java" name="co.edu.ubosque.logic.InformacionPersonalLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/InformacionPersonalLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="356" x="789" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="co.edu.ubosque.model.InformacionAcademica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/InformacionAcademica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="495" width="298" x="4911" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="co.edu.ubosque.model.TipoDocumento" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/TipoDocumento.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="315" width="259" x="4062" y="3343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="co.edu.ubosque.dao.impl.EstadoCivilDaoSQLServerHibernate" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/EstadoCivilDaoSQLServerHibernate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="225" x="-300" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="co.edu.ubosque.logic.ExperienciaLaboralLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/ExperienciaLaboralLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="292" x="407" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="co.edu.ubosque.dao.impl.InformacionPersonalDaoSQLServerHibernate" 
+    project="teemplea" file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/InformacionPersonalDaoSQLServerHibernate.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="343" x="760" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="co.edu.ubosque.model.EstadoCivil" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/EstadoCivil.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="157" x="-6" y="3343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="co.edu.ubosque.logic.SectorLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/SectorLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="172" x="6438" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="co.edu.ubosque.dao.impl.EmpresaDaoSQLServerHibernate" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/EmpresaDaoSQLServerHibernate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="207" width="222" x="1978" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="co.edu.ubosque.dao.impl.TipoDocumentoDaoSQLServerHibernate" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/TipoDocumentoDaoSQLServerHibernate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="256" x="3513" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="co.edu.ubosque.dao.mb.InformacionPersonalMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/InformacionPersonalMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1143" width="320" x="1250" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="39" language="java" name="co.edu.ubosque.dao.IOfertaLaboralDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/IOfertaLaboralDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="242" x="5354" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="40" language="java" name="co.edu.ubosque.dao.mb.TipoDocumentoMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/TipoDocumentoMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="272" x="4083" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="co.edu.ubosque.dao.impl.OfertaLaboralDaoSQLServerHibernate" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/OfertaLaboralDaoSQLServerHibernate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="242" x="5333" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="co.edu.ubosque.dao.impl.UsuarioDaoSQLServerHibernate" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/UsuarioDaoSQLServerHibernate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="207" x="2652" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="co.edu.ubosque.model.ExperienciaLaboral" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/ExperienciaLaboral.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="549" width="311" x="304" y="3343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="co.edu.ubosque.logic.EmpresaLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/EmpresaLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="244" x="2017" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="45" language="java" name="co.edu.ubosque.logic.OfertaLaboralLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/OfertaLaboralLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="242" x="5354" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="46" language="java" name="co.edu.ubosque.model.InformacionPersonal" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/InformacionPersonal.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="765" width="448" x="1187" y="3343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="47" language="java" name="co.edu.ubosque.dao.IReferenciasDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/IReferenciasDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="227" x="6066" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="48" language="java" name="co.edu.ubosque.dao.impl.InformacionAcademicaDaoSQLServerHibernate" 
+    project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/InformacionAcademicaDaoSQLServerHibernate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="329" x="4472" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="co.edu.ubosque.dao.mb.DepartamentoMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/DepartamentoMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="258" x="5270" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="50" language="java" name="co.edu.ubosque.logic.EstadoCivilLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/EstadoCivilLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="212" x="-239" y="2296"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="51" language="java" name="co.edu.ubosque.dao.mb.ReferenciasMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/ReferenciasMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="333" width="242" x="6356" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="52" language="java" name="co.edu.ubosque.dao.ISectorDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/ISectorDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="172" x="6417" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="53" language="java" name="co.edu.ubosque.dao.mb.OfertaLaboralMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/OfertaLaboralMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="387" width="271" x="5722" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="54" language="java" name="co.edu.ubosque.dao.IPerfilUsuarioDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/IPerfilUsuarioDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="230" x="1353" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="55" language="java" name="co.edu.ubosque.dao.mb.EmpresaMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/EmpresaMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="1359" width="245" x="2282" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="56" language="java" name="co.edu.ubosque.logic.ReferenciasLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/ReferenciasLogica.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="227" x="6087" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="57" language="java" name="co.edu.ubosque.model.TeEmplea" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/TeEmplea.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="157" x="2789" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="58" language="java" name="co.edu.ubosque.dao.mb.SectorMB" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/mb/SectorMB.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="297" width="200" x="6652" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="59" language="java" name="co.edu.ubosque.model.CrearCuenta" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/CrearCuenta.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="459" width="334" x="1623" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="60" language="java" name="co.edu.ubosque.logic.PerfilUsuario" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/PerfilUsuario.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="137" x="1837" y="-124"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="61" language="java" name="co.edu.ubosque.dao.impl.ExperienciaDaoSQLServerHibernate" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/ExperienciaDaoSQLServerHibernate.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="171" width="292" x="365" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="62" language="java" name="co.edu.ubosque.dao.impl.TipoReferenciaDaoSQLServerHibernate2" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/impl/TipoReferenciaDaoSQLServerHibernate2.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="256" x="3112" y="2561"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="63" language="java" name="co.edu.ubosque.model.Empresa" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/Empresa.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="963" width="497" x="2324" y="3343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="64" language="java" name="co.edu.ubosque.dao.IExperienciaLaboralDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/IExperienciaLaboralDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="292" x="386" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="65" language="java" name="co.edu.ubosque.logic.InformacionAcademicaLogica" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/logic/InformacionAcademicaLogica.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="328" x="4797" y="897"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="66" language="java" name="co.edu.ubosque.model.Departamento" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/model/Departamento.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="167" x="5230" y="3343"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="67" language="java" name="co.edu.ubosque.dao.IEstadoCivilDAO" project="teemplea" 
+    file="/teemplea/JavaSource/co/edu/ubosque/dao/IEstadoCivilDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="212" x="-260" y="2808"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <association id="68">    
+    <bendpoint x="334" y="2296"/>    
+    <bendpoint x="334" y="2561"/>    
+    <bendpoint x="334" y="2808"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="69" name="experiencia"/>      
+      <multiplicity id="70" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="71">    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="14"/>  
+  </dependency>  
+  <dependency id="72">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="73">    
+    <bendpoint x="-291" y="2808"/>    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="34"/>  
+  </dependency>  
+  <association id="74">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="75" name="logicaReferencias"/>      
+      <multiplicity id="76" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="56" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="77">    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="78" name="logica"/>      
+      <multiplicity id="79" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="80">    
+    <bendpoint x="4441" y="897"/>    
+    <bendpoint x="4441" y="2296"/>    
+    <bendpoint x="4460" y="2561"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="81" name="listaAcademica"/>      
+      <multiplicity id="82" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="83">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="84" name="logica"/>      
+      <multiplicity id="85" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="65" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="86">    
+    <bendpoint x="2291" y="2296"/>    
+    <bendpoint x="2291" y="2561"/>    
+    <bendpoint x="2291" y="2808"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="87" name="empresaAModificar"/>      
+      <multiplicity id="88" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="89">    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="21"/>  
+  </realization>  
+  <association id="90">    
+    <bendpoint x="5197" y="897"/>    
+    <bendpoint x="5197" y="2296"/>    
+    <bendpoint x="5197" y="2561"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="91" name="listaInformacionAcademica"/>      
+      <multiplicity id="92" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="93">    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="94" name="logica"/>      
+      <multiplicity id="95" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="35" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="96">    
+    <bendpoint x="4134" y="2296"/>    
+    <bendpoint x="4134" y="2561"/>    
+    <bendpoint x="4134" y="2808"/>    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="97" name="tipoDocumentoACrear"/>      
+      <multiplicity id="98" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="99">    
+    <bendpoint x="6437" y="2561"/>    
+    <end type="SOURCE" refId="35" navigable="false">      
+      <attribute id="100" name="dao"/>      
+      <multiplicity id="101" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="52" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="102">    
+    <bendpoint x="6640" y="2296"/>    
+    <bendpoint x="6640" y="2561"/>    
+    <bendpoint x="6640" y="2808"/>    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="103" name="sectorAEliminar"/>      
+      <multiplicity id="104" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="105">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="106" name="crearCuentas"/>      
+      <multiplicity id="107" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="108">    
+    <bendpoint x="6323" y="2296"/>    
+    <bendpoint x="6323" y="2561"/>    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <association id="109">    
+    <bendpoint x="2997" y="897"/>    
+    <bendpoint x="2997" y="2296"/>    
+    <bendpoint x="2997" y="2561"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="110" name="ciudadanoLogin"/>      
+      <multiplicity id="111" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="112">    
+    <bendpoint x="5668" y="2296"/>    
+    <bendpoint x="5668" y="2561"/>    
+    <bendpoint x="5668" y="2808"/>    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="113" name="ofertaLaboralAModificar"/>      
+      <multiplicity id="114" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="115">    
+    <bendpoint x="5323" y="2808"/>    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <association id="116">    
+    <bendpoint x="1259" y="2296"/>    
+    <bendpoint x="1259" y="2561"/>    
+    <bendpoint x="1259" y="2808"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="117" name="loginInformacion"/>      
+      <multiplicity id="118" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="119">    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="120" name="logica"/>      
+      <multiplicity id="121" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="56" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="122">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="64"/>  
+  </realization>  
+  <dependency id="123">    
+    <end type="SOURCE" refId="52"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="124">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <realization id="125">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <association id="126">    
+    <bendpoint x="5605" y="2561"/>    
+    <end type="SOURCE" refId="45" navigable="false">      
+      <attribute id="127" name="dao"/>      
+      <multiplicity id="128" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="39" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="129">    
+    <bendpoint x="6619" y="2561"/>    
+    <bendpoint x="6619" y="2808"/>    
+    <end type="SOURCE" refId="35"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <realization id="130">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <dependency id="131">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="132">    
+    <bendpoint x="5626" y="2561"/>    
+    <bendpoint x="5626" y="2808"/>    
+    <end type="SOURCE" refId="45"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <association id="133">    
+    <bendpoint x="1217" y="2296"/>    
+    <bendpoint x="1217" y="2561"/>    
+    <bendpoint x="1217" y="2808"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="134" name="informacionPersonalACrear"/>      
+      <multiplicity id="135" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="136">    
+    <end type="SOURCE" refId="64"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <dependency id="137">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="57"/>  
+  </dependency>  
+  <association id="138">    
+    <bendpoint x="6344" y="897"/>    
+    <bendpoint x="6344" y="2296"/>    
+    <bendpoint x="6344" y="2561"/>    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="139" name="listaReferencias"/>      
+      <multiplicity id="140" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="141">    
+    <bendpoint x="729" y="897"/>    
+    <bendpoint x="729" y="2296"/>    
+    <bendpoint x="729" y="2561"/>    
+    <bendpoint x="729" y="2808"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="142" name="experienciaLista"/>      
+      <multiplicity id="143" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="144">    
+    <bendpoint x="292" y="2296"/>    
+    <bendpoint x="292" y="2561"/>    
+    <bendpoint x="292" y="2808"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="145" name="experienciaLaboralACrear"/>      
+      <multiplicity id="146" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="147">    
+    <bendpoint x="2333" y="2296"/>    
+    <bendpoint x="2333" y="2561"/>    
+    <bendpoint x="2333" y="2808"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="148" name="listaIEmpresas"/>      
+      <multiplicity id="149" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="150">    
+    <bendpoint x="3733" y="2808"/>    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <dependency id="151">    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <association id="152">    
+    <bendpoint x="4831" y="2296"/>    
+    <end type="SOURCE" refId="65" navigable="false">      
+      <attribute id="153" name="dao"/>      
+      <multiplicity id="154" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="27" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="155">    
+    <bendpoint x="1175" y="2296"/>    
+    <bendpoint x="1175" y="2561"/>    
+    <bendpoint x="1175" y="2808"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="156" name="perfil"/>      
+      <multiplicity id="157" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="158">    
+    <bendpoint x="6386" y="897"/>    
+    <bendpoint x="6386" y="2296"/>    
+    <bendpoint x="6386" y="2561"/>    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="159" name="referenciasAEliminar"/>      
+      <multiplicity id="160" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="161">    
+    <bendpoint x="2270" y="2561"/>    
+    <bendpoint x="2270" y="2808"/>    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="63"/>  
+  </dependency>  
+  <dependency id="162">    
+    <end type="SOURCE" refId="56"/>    
+    <end type="TARGET" refId="17"/>  
+  </dependency>  
+  <association id="163">    
+    <bendpoint x="66" y="2296"/>    
+    <bendpoint x="66" y="2561"/>    
+    <bendpoint x="66" y="2808"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="164" name="estadoCivilAModificar"/>      
+      <multiplicity id="165" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="166">    
+    <bendpoint x="24" y="2296"/>    
+    <bendpoint x="24" y="2561"/>    
+    <bendpoint x="24" y="2808"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="167" name="listaEstadoCivil"/>      
+      <multiplicity id="168" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="169">    
+    <bendpoint x="3482" y="2296"/>    
+    <bendpoint x="3482" y="2561"/>    
+    <bendpoint x="3461" y="2808"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="170" name="referencia"/>      
+      <multiplicity id="171" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="172">    
+    <bendpoint x="4050" y="2561"/>    
+    <bendpoint x="4050" y="2808"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="30"/>  
+  </dependency>  
+  <association id="173">    
+    <bendpoint x="4092" y="2296"/>    
+    <bendpoint x="4092" y="2561"/>    
+    <bendpoint x="4092" y="2808"/>    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="174" name="tipoDocumentoAEliminar"/>      
+      <multiplicity id="175" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="176">    
+    <end type="SOURCE" refId="39"/>    
+    <end type="TARGET" refId="22"/>  
+  </dependency>  
+  <dependency id="177">    
+    <end type="SOURCE" refId="47"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <association id="178">    
+    <bendpoint x="1301" y="2296"/>    
+    <bendpoint x="1301" y="2561"/>    
+    <bendpoint x="1301" y="2808"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="179" name="validarInformacionPersonal"/>      
+      <multiplicity id="180" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="181">    
+    <bendpoint x="2910" y="2296"/>    
+    <bendpoint x="2910" y="2561"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="182">    
+    <bendpoint x="-45" y="2561"/>    
+    <end type="SOURCE" refId="50" navigable="false">      
+      <attribute id="183" name="dao"/>      
+      <multiplicity id="184" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="67" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="185">    
+    <bendpoint x="208" y="2296"/>    
+    <bendpoint x="208" y="2561"/>    
+    <bendpoint x="208" y="2808"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="186" name="experiencias"/>      
+      <multiplicity id="187" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="188">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <association id="189">    
+    <bendpoint x="6661" y="2296"/>    
+    <bendpoint x="6661" y="2561"/>    
+    <bendpoint x="6661" y="2808"/>    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="190" name="sectorAModificar"/>      
+      <multiplicity id="191" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="192">    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="193" name="logica"/>      
+      <multiplicity id="194" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="195">    
+    <bendpoint x="2312" y="2296"/>    
+    <bendpoint x="2312" y="2561"/>    
+    <bendpoint x="2312" y="2808"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="196" name="empresaAEliminar"/>      
+      <multiplicity id="197" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="198">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="16"/>  
+  </dependency>  
+  <association id="199">    
+    <bendpoint x="1280" y="2296"/>    
+    <bendpoint x="1280" y="2561"/>    
+    <bendpoint x="1280" y="2808"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="200" name="informacionPersonalAEliminar"/>      
+      <multiplicity id="201" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="202">    
+    <bendpoint x="250" y="2296"/>    
+    <bendpoint x="250" y="2561"/>    
+    <bendpoint x="250" y="2808"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="203" name="experienciaLaboralAEliminar"/>      
+      <multiplicity id="204" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="205">    
+    <bendpoint x="355" y="2808"/>    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <association id="206">    
+    <bendpoint x="5176" y="897"/>    
+    <bendpoint x="5176" y="2296"/>    
+    <bendpoint x="5176" y="2561"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="207" name="informacionAcademicaAEliminar"/>      
+      <multiplicity id="208" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="209">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="37"/>  
+  </dependency>  
+  <association id="210">    
+    <bendpoint x="4071" y="2296"/>    
+    <bendpoint x="4071" y="2561"/>    
+    <bendpoint x="4071" y="2808"/>    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="211" name="tipoDocumentoAModificar"/>      
+      <multiplicity id="212" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="213">    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="214" name="logica"/>      
+      <multiplicity id="215" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="216">    
+    <bendpoint x="1196" y="2296"/>    
+    <bendpoint x="1196" y="2561"/>    
+    <bendpoint x="1196" y="2808"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="217" name="perfilAmodificar"/>      
+      <multiplicity id="218" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="219">    
+    <bendpoint x="4577" y="2808"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="66"/>  
+  </dependency>  
+  <dependency id="220">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="221">    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="31"/>  
+  </dependency>  
+  <association id="222">    
+    <bendpoint x="5281" y="2296"/>    
+    <bendpoint x="5281" y="2561"/>    
+    <bendpoint x="5281" y="2808"/>    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="223" name="departamentoAEliminar"/>      
+      <multiplicity id="224" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="225">    
+    <bendpoint x="2438" y="2296"/>    
+    <bendpoint x="2438" y="2561"/>    
+    <bendpoint x="2438" y="2808"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="226" name="empresaACrear"/>      
+      <multiplicity id="227" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="228">    
+    <bendpoint x="3124" y="2808"/>    
+    <end type="SOURCE" refId="62"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <association id="229">    
+    <bendpoint x="3018" y="897"/>    
+    <bendpoint x="3018" y="2296"/>    
+    <bendpoint x="3018" y="2561"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="230" name="usuarioAModificar"/>      
+      <multiplicity id="231" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="232">    
+    <bendpoint x="1238" y="2296"/>    
+    <bendpoint x="1238" y="2561"/>    
+    <bendpoint x="1238" y="2808"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="233" name="listaInformacion"/>      
+      <multiplicity id="234" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="235">    
+    <bendpoint x="271" y="2296"/>    
+    <bendpoint x="271" y="2561"/>    
+    <bendpoint x="271" y="2808"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="236" name="experienciaLaboralAModificar"/>      
+      <multiplicity id="237" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="238">    
+    <bendpoint x="313" y="2296"/>    
+    <bendpoint x="313" y="2561"/>    
+    <bendpoint x="313" y="2808"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="239" name="listaExperienciasLaborales"/>      
+      <multiplicity id="240" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="241">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="52"/>  
+  </realization>  
+  <association id="242">    
+    <bendpoint x="3799" y="2561"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="243" name="dao"/>      
+      <multiplicity id="244" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="245">    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="246" name="logica"/>      
+      <multiplicity id="247" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="45" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="248">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <dependency id="249">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <association id="250">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="251" name="crearCuentas"/>      
+      <multiplicity id="252" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="59" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="253">    
+    <bendpoint x="1154" y="2561"/>    
+    <bendpoint x="1154" y="2808"/>    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="254">    
+    <bendpoint x="5626" y="897"/>    
+    <bendpoint x="5626" y="2296"/>    
+    <bendpoint x="5710" y="2561"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="255" name="listaReferencias"/>      
+      <multiplicity id="256" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="257">    
+    <bendpoint x="5260" y="2296"/>    
+    <bendpoint x="5260" y="2561"/>    
+    <bendpoint x="5260" y="2808"/>    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="258" name="departamentoAModificar"/>      
+      <multiplicity id="259" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="260">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="63"/>  
+  </dependency>  
+  <dependency id="261">    
+    <bendpoint x="4892" y="2561"/>    
+    <bendpoint x="4880" y="2808"/>    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="66"/>  
+  </dependency>  
+  <association id="262">    
+    <bendpoint x="5773" y="2296"/>    
+    <bendpoint x="5773" y="2561"/>    
+    <bendpoint x="5773" y="2808"/>    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="263" name="ofertaLaboralSeleccionada"/>      
+      <multiplicity id="264" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="265">    
+    <bendpoint x="229" y="2296"/>    
+    <bendpoint x="229" y="2561"/>    
+    <bendpoint x="229" y="2808"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="266" name="validar"/>      
+      <multiplicity id="267" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="43" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="268">    
+    <bendpoint x="5134" y="2296"/>    
+    <bendpoint x="5134" y="2561"/>    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <dependency id="269">    
+    <bendpoint x="6035" y="2561"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="13"/>  
+  </dependency>  
+  <realization id="270">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="67"/>  
+  </realization>  
+  <association id="271">    
+    <bendpoint x="6682" y="2296"/>    
+    <bendpoint x="6682" y="2561"/>    
+    <bendpoint x="6682" y="2808"/>    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="272" name="listaSectores"/>      
+      <multiplicity id="273" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="274">    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="27"/>  
+  </realization>  
+  <dependency id="275">    
+    <end type="SOURCE" refId="45"/>    
+    <end type="TARGET" refId="41"/>  
+  </dependency>  
+  <realization id="276">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="23"/>  
+  </realization>  
+  <association id="277">    
+    <bendpoint x="3461" y="2296"/>    
+    <bendpoint x="3461" y="2561"/>    
+    <bendpoint x="3440" y="2808"/>    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="278" name="listaReferencias"/>      
+      <multiplicity id="279" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="25" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="280">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="61"/>  
+  </dependency>  
+  <association id="281">    
+    <bendpoint x="3081" y="897"/>    
+    <bendpoint x="3081" y="2296"/>    
+    <bendpoint x="3081" y="2561"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="282" name="usuarioAEliminar"/>      
+      <multiplicity id="283" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="284">    
+    <bendpoint x="5731" y="2296"/>    
+    <bendpoint x="5731" y="2561"/>    
+    <bendpoint x="5731" y="2808"/>    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="285" name="listaOfertaLaboral"/>      
+      <multiplicity id="286" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="287">    
+    <bendpoint x="3398" y="2561"/>    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="288" name="dao"/>      
+      <multiplicity id="289" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="290">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="291" name="logica"/>      
+      <multiplicity id="292" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="12" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="293">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="294" name="perfilUsuario"/>      
+      <multiplicity id="295" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="296">    
+    <bendpoint x="4155" y="2561"/>    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <association id="297">    
+    <bendpoint x="5239" y="897"/>    
+    <bendpoint x="5239" y="2296"/>    
+    <bendpoint x="5239" y="2561"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="298" name="informacionAcademicaACrear"/>      
+      <multiplicity id="299" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="300">    
+    <bendpoint x="5155" y="897"/>    
+    <bendpoint x="5155" y="2296"/>    
+    <bendpoint x="5155" y="2561"/>    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="301" name="informacionAcademicaAModificar"/>      
+      <multiplicity id="302" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="29" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="303">    
+    <end type="SOURCE" refId="59" navigable="false">      
+      <attribute id="304" name="tipoDocumento"/>      
+      <multiplicity id="305" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="306">    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="307" name="logica"/>      
+      <multiplicity id="308" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="44" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="309">    
+    <bendpoint x="5647" y="2296"/>    
+    <bendpoint x="5647" y="2561"/>    
+    <bendpoint x="5647" y="2808"/>    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="310" name="ofertaLaboralACrear"/>      
+      <multiplicity id="311" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="312">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="313">    
+    <bendpoint x="3440" y="2561"/>    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <association id="314">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="315" name="logicaAcademica"/>      
+      <multiplicity id="316" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="65" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="317">    
+    <bendpoint x="2417" y="2296"/>    
+    <bendpoint x="2417" y="2561"/>    
+    <bendpoint x="2417" y="2808"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="318" name="empresaAmodificar"/>      
+      <multiplicity id="319" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="320">    
+    <bendpoint x="2230" y="2561"/>    
+    <end type="SOURCE" refId="44" navigable="false">      
+      <attribute id="321" name="dao"/>      
+      <multiplicity id="322" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="323">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="62"/>  
+  </dependency>  
+  <association id="324">    
+    <bendpoint x="3039" y="897"/>    
+    <bendpoint x="3039" y="2296"/>    
+    <bendpoint x="3039" y="2561"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="325" name="validarUsuario"/>      
+      <multiplicity id="326" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="327">    
+    <bendpoint x="2976" y="897"/>    
+    <bendpoint x="2976" y="2296"/>    
+    <bendpoint x="2976" y="2561"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="328" name="usuarioACrear"/>      
+      <multiplicity id="329" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="330">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="331">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="332" name="logica"/>      
+      <multiplicity id="333" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="334">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <dependency id="335">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <association id="336">    
+    <bendpoint x="3060" y="897"/>    
+    <bendpoint x="3060" y="2296"/>    
+    <bendpoint x="3060" y="2561"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="337" name="listaUsuarios"/>      
+      <multiplicity id="338" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="339">    
+    <bendpoint x="3" y="2296"/>    
+    <bendpoint x="3" y="2561"/>    
+    <bendpoint x="3" y="2808"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="340" name="estadoCivilAEliminar"/>      
+      <multiplicity id="341" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="342">    
+    <bendpoint x="750" y="2808"/>    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="46"/>  
+  </dependency>  
+  <dependency id="343">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="34"/>  
+  </dependency>  
+  <association id="344">    
+    <bendpoint x="4113" y="2296"/>    
+    <bendpoint x="4113" y="2561"/>    
+    <bendpoint x="4113" y="2808"/>    
+    <end type="SOURCE" refId="40" navigable="false">      
+      <attribute id="345" name="listaTipoDocumento"/>      
+      <multiplicity id="346" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="347">    
+    <bendpoint x="1987" y="2808"/>    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="63"/>  
+  </dependency>  
+  <association id="348">    
+    <bendpoint x="2354" y="2296"/>    
+    <bendpoint x="2354" y="2561"/>    
+    <bendpoint x="2354" y="2808"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="349" name="validarInformacionEmpresa"/>      
+      <multiplicity id="350" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="351">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="352" name="experiencia"/>      
+      <multiplicity id="353" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="354">    
+    <bendpoint x="1133" y="2561"/>    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="355" name="dao"/>      
+      <multiplicity id="356" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="357">    
+    <end type="SOURCE" refId="54"/>    
+    <end type="TARGET" refId="11"/>  
+  </dependency>  
+  <association id="358">    
+    <bendpoint x="5302" y="2296"/>    
+    <bendpoint x="5302" y="2561"/>    
+    <bendpoint x="5302" y="2808"/>    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="359" name="listaDepartamento"/>      
+      <multiplicity id="360" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="361">    
+    <bendpoint x="6083" y="2808"/>    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="362">    
+    <end type="SOURCE" refId="61"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <association id="363">    
+    <bendpoint x="5752" y="2296"/>    
+    <bendpoint x="5752" y="2561"/>    
+    <bendpoint x="5752" y="2808"/>    
+    <end type="SOURCE" refId="53" navigable="false">      
+      <attribute id="364" name="ofertaLaboralAEliminar"/>      
+      <multiplicity id="365" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="366">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="33"/>  
+  </dependency>  
+  <association id="367">    
+    <bendpoint x="45" y="2296"/>    
+    <bendpoint x="45" y="2561"/>    
+    <bendpoint x="45" y="2808"/>    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="368" name="estadoCivilACrear"/>      
+      <multiplicity id="369" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="34" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="370">    
+    <bendpoint x="6703" y="2296"/>    
+    <bendpoint x="6703" y="2561"/>    
+    <bendpoint x="6703" y="2808"/>    
+    <end type="SOURCE" refId="58" navigable="false">      
+      <attribute id="371" name="sectorACrear"/>      
+      <multiplicity id="372" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="373">    
+    <bendpoint x="4481" y="2561"/>    
+    <end type="SOURCE" refId="48"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <dependency id="374">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="66"/>  
+  </dependency>  
+  <association id="375">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="376" name="empresa"/>      
+      <multiplicity id="377" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="55" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="378">    
+    <bendpoint x="-18" y="2561"/>    
+    <bendpoint x="-18" y="2808"/>    
+    <end type="SOURCE" refId="50"/>    
+    <end type="TARGET" refId="34"/>  
+  </dependency>  
+  <dependency id="379">    
+    <end type="SOURCE" refId="44"/>    
+    <end type="TARGET" refId="36"/>  
+  </dependency>  
+  <realization id="380">    
+    <end type="SOURCE" refId="41"/>    
+    <end type="TARGET" refId="39"/>  
+  </realization>  
+  <association id="381">    
+    <bendpoint x="2396" y="2296"/>    
+    <bendpoint x="2396" y="2561"/>    
+    <bendpoint x="2396" y="2808"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="382" name="perfil"/>      
+      <multiplicity id="383" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="384">    
+    <bendpoint x="687" y="2561"/>    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="385" name="dao"/>      
+      <multiplicity id="386" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="64" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="387">    
+    <end type="SOURCE" refId="36"/>    
+    <end type="TARGET" refId="7"/>  
+  </realization>  
+  <dependency id="388">    
+    <bendpoint x="708" y="2561"/>    
+    <bendpoint x="708" y="2808"/>    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="43"/>  
+  </dependency>  
+  <realization id="389">    
+    <end type="SOURCE" refId="37"/>    
+    <end type="TARGET" refId="2"/>  
+  </realization>  
+  <association id="390">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="391" name="informacion"/>      
+      <multiplicity id="392" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="38" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="393">    
+    <bendpoint x="5689" y="2561"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="19"/>  
+  </dependency>  
+  <association id="394">    
+    <bendpoint x="2889" y="2296"/>    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="395" name="dao"/>      
+      <multiplicity id="396" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="397">    
+    <bendpoint x="6365" y="897"/>    
+    <bendpoint x="6365" y="2296"/>    
+    <bendpoint x="6365" y="2561"/>    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="398" name="referenciasACrear"/>      
+      <multiplicity id="399" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="400">    
+    <bendpoint x="2375" y="2296"/>    
+    <bendpoint x="2375" y="2561"/>    
+    <bendpoint x="2375" y="2808"/>    
+    <end type="SOURCE" refId="55" navigable="false">      
+      <attribute id="401" name="loginEmpresa"/>      
+      <multiplicity id="402" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="63" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="403">    
+    <bendpoint x="4871" y="2561"/>    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="404" name="dao"/>      
+      <multiplicity id="405" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="406">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="42"/>  
+  </dependency>  
+  <association id="407">    
+    <bendpoint x="6096" y="2296"/>    
+    <end type="SOURCE" refId="56" navigable="false">      
+      <attribute id="408" name="dao"/>      
+      <multiplicity id="409" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="47" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="410">    
+    <bendpoint x="3419" y="2561"/>    
+    <bendpoint x="3419" y="2808"/>    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="25"/>  
+  </dependency>  
+  <association id="411">    
+    <bendpoint x="6407" y="897"/>    
+    <bendpoint x="6407" y="2296"/>    
+    <bendpoint x="6407" y="2561"/>    
+    <end type="SOURCE" refId="51" navigable="false">      
+      <attribute id="412" name="referenciasAModificar"/>      
+      <multiplicity id="413" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="414">    
+    <bendpoint x="708" y="897"/>    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="415" name="logicaExperiencia"/>      
+      <multiplicity id="416" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="417">    
+    <bendpoint x="1322" y="2296"/>    
+    <bendpoint x="1322" y="2561"/>    
+    <bendpoint x="1322" y="2808"/>    
+    <end type="SOURCE" refId="38" navigable="false">      
+      <attribute id="418" name="informacionPersonalAModificar"/>      
+      <multiplicity id="419" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="46" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="420">    
+    <bendpoint x="2931" y="2296"/>    
+    <bendpoint x="2931" y="2561"/>    
+    <end type="SOURCE" refId="57"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="421">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="422" name="logica"/>      
+      <multiplicity id="423" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="424">    
+    <end type="SOURCE" refId="65"/>    
+    <end type="TARGET" refId="48"/>  
+  </dependency>  
+  <dependency id="425">    
+    <bendpoint x="2667" y="2561"/>    
+    <end type="SOURCE" refId="42"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <association id="426">    
+    <bendpoint x="5218" y="2296"/>    
+    <bendpoint x="5218" y="2561"/>    
+    <bendpoint x="5239" y="2808"/>    
+    <end type="SOURCE" refId="49" navigable="false">      
+      <attribute id="427" name="departamentoACrear"/>      
+      <multiplicity id="428" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="66" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <dependency id="429">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="29"/>  
+  </dependency>  
+  <realization id="430">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="47"/>  
+  </realization>  
+  <association id="431">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="432" name="logica"/>      
+      <multiplicity id="433" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="50" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

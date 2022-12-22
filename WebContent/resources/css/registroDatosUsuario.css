@@ -1,0 +1,45 @@
+.contenedorDatos{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 60px 68px 40px;
+	min-height: calc(100vh - 200px);
+}
+
+.btnGuardar{
+	background-color: #ffffff;
+	color: #0a66c2;
+	width: 150px;
+	height: 30px;
+	border: 1px solid #0a66c2;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0px 24px;
+}
+
+.btnCancelar{
+	background-color: #ffffff;
+	color: red;
+	width: 150px;
+	height: 30px;
+	border: 1px solid red;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 0px 24px;
+}
+
+.txtDatos {
+	font-size: 12px;
+	font-family: 'Muli', sans-serif;
+	display: flex;
+	width: 200px;
+	height: 20px;
+	border: 1px solid #0a66c2;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+
+.lblDatosBasicosUsuario{
+	margin-right: 115px;
+}

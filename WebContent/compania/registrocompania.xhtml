@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Registrar compañia</title>
+	<h:outputStylesheet library="css" name="estilosGenerales.css" />
+	<h:outputStylesheet library="css" name="usuario.css" />
+</h:head>
+<h:body id="registrarCompania" styleClass="registrarCompania">
+
+	<h:form>
+
+		<p:growl id="mensaje" life="1000" showDetail="true" />
+		<h:panelGrid>
+			<h:commandLink action="/informacionUsuario/perfilUsuario"
+				value="Te Emplea" styleClass="lblTeEmplea" immediate="true" />
+
+			<h:outputLabel value="#{informacionPersonalMB.nombrePersona}" />
+
+		</h:panelGrid>
+
+		<div class="conInformacionBasica">
+
+			<h:panelGrid style="margin-top: 10px;">
+				<h:outputLabel value="Informacion basica" styleClass="lblTitulos" />
+			</h:panelGrid>
+
+			<!-- lbl nombres -->
+			<!-- lbl apellidos -->
+			<!-- lbl No. identificacion -->
+			<h:panelGrid columns="3" style="margin-top: 10px;">
+				<h:outputLabel value="Nombre compañia" styleClass="lbl"
+					style="margin-right: 100px;" />
+				<h:outputLabel value="Rut" styleClass="lbl"
+					style="margin-right: 175px;" />
+				<h:outputLabel value="Telefono" styleClass="lbl" />
+			</h:panelGrid>
+
+			<h:panelGrid columns="3">
+				<h:inputText value="#{empresaMB.empresaACrear.nombreEmpresa}" styleClass="txtInformacion" required="true" />
+
+				<h:selectOneMenu styleClass="txtInformacion"
+					value="#{empresaMB.empresaACrear.rut}"
+					required="true">
+					<f:selectItem itemLabel="#{usuarioMB.nombrePersona}"
+						itemValue="#{usuarioMB.nombrePersona}" />
+				</h:selectOneMenu>
+
+				<h:inputText
+					value="#{empresaMB.empresaACrear.telefono}"
+					styleClass="txtInformacion" required="true" />
+
+			</h:panelGrid>
+
+			<h:panelGrid columns="3" style="margin-top: 10px;">
+			
+				<h:outputLabel value="Correo" styleClass="lbl"
+					style="margin-right: 90px;" />
+					
+				<h:outputLabel value="Departamento" styleClass="lbl"
+					style="margin-right: 190px;" />
+					
+				<h:outputLabel value="Direccion" styleClass="lbl" />
+				
+			</h:panelGrid>
+
+			<!-- Correo del usuario -->
+			<h:panelGrid columns="3">
+
+				<h:selectOneMenu styleClass="combox"
+					value="#{empresaMB.empresaACrear.correo}"
+					required="true">
+					<f:selectItem itemLabel="#{usuarioMB.correoPersona}"
+						itemValue="#{usuarioMB.correoPersona}" />
+				</h:selectOneMenu>
+
+				<h:selectOneMenu id="departamento"
+					value="#{empresaMB.empresaACrear.departamento}"
+					styleClass="combox" style="margin-right: 10px;" required="true">
+					<f:selectItems var="departamentos"
+						itemLabel="#{departamentos.departamento}"
+						itemValue="#{departamentos.departamento}"
+						value="#{departamentoMB.listaDepartamento}" />
+				</h:selectOneMenu>
+
+				<h:inputText value="#{empresaMB.empresaACrear.direccion}" styleClass="txtInformacion" />
+
+			</h:panelGrid>
+
+			<h:panelGrid columns="3" style="margin-top: 10px;">
+			
+				<h:outputLabel value="Tipo compañia" styleClass="lbl"
+					style="margin-right: 160px;" />
+					
+				<h:outputLabel value="Sector" styleClass="lbl"
+					style="margin-right: 100px;" />
+					
+				<h:outputLabel value="Descripcion" styleClass="lbl" />
+				
+			</h:panelGrid>
+
+			<h:panelGrid columns="3" style="margin-top: 10px;">
+
+				<h:selectOneMenu id="tipodecompania"
+					placeholder="Selecciona la compañia" styleClass="combox" value="#{empresaMB.empresaACrear.tipoCompañia}">
+					<f:selectItem itemLabel="Agencia de reclutamiento"
+						itemValue="agenciaDeReclutamiento" />
+					<f:selectItem itemLabel="Empleador directo"
+						itemValue="empleadorDirecto" />
+					<f:selectItem itemLabel="Servicios temporales"
+						itemValue="serviciosTemporales" />
+				</h:selectOneMenu>
+
+				<h:selectOneMenu id="sector"
+					value="#{empresaMB.empresaACrear.sector}"
+					styleClass="combox">
+					<f:selectItems var="sector" itemLabel="#{sector.nombre}"
+						itemValue="#{sector.nombre}" value="#{sectorMB.listaSectores}" />
+				</h:selectOneMenu>
+
+				<h:inputText value="#{empresaMB.empresaACrear.desripcion}" id="descripcionCompania" styleClass="txtInformacion" />
+
+			</h:panelGrid>
+
+			<h:panelGrid columns="1" style="margin-top: 10px;">
+
+				<p:outputLabel for="paginaweb" value="Pagina web de la compañia" />
+				<h:inputText value="#{empresaMB.empresaACrear.pagina}" id="paginaweb" styleClass="txtInformacion" />
+
+			</h:panelGrid>
+
+			<h:panelGrid style="margin-top: 10px;">
+				<h:outputLabel value="Datos de contacto" styleClass="lblTitulos" />
+			</h:panelGrid>
+
+			<!-- lbl nombres -->
+			<!-- lbl apellidos -->
+			<!-- lbl No. identificacion -->
+			<h:panelGrid columns="3" style="margin-top: 10px;">
+				<h:outputLabel value="Nombres" styleClass="lbl"
+					style="margin-right: 100px;" />
+				<h:outputLabel value="Apellidos" styleClass="lbl"
+					style="margin-right: 175px;" />
+				<h:outputLabel value="Cargo" styleClass="lbl" />
+			</h:panelGrid>
+			
+			<h:panelGrid columns="3">
+						<h:inputText
+							value="#{empresaMB.empresaACrear.nombres}"
+							styleClass="txtInformacion" required="true"/>
+						<h:inputText
+							value="#{empresaMB.empresaACrear.apellidos}"
+							styleClass="txtInformacion" required="true"/>
+						
+						<h:inputText
+							value="#{empresaMB.empresaACrear.cargo}"
+							styleClass="txtInformacion" required="true"/>
+					</h:panelGrid>
+					
+					<!-- lbl apellidos -->
+			<!-- lbl No. identificacion -->
+			<h:panelGrid columns="2" style="margin-top: 10px;">
+				<h:outputLabel value="Telefono movil" styleClass="lbl"
+					style="margin-right: 100px;" />
+				<h:outputLabel value="Telefono fijo" styleClass="lbl"
+					style="margin-right: 175px;" />
+			</h:panelGrid>
+			
+			<h:panelGrid columns="2">
+						<h:inputText
+							value="#{empresaMB.empresaACrear.telefonoMovil}"
+							styleClass="txtInformacion" required="true"/>
+						<h:inputText
+							value="#{empresaMB.empresaACrear.telefonoFijo}"
+							styleClass="txtInformacion" required="true"/>
+						
+					</h:panelGrid>
+
+			<!-- Botones guardar y salir -->
+				<h:panelGrid columns="2" style="margin-top: 20px;">
+
+					<h:commandButton value="Guardar" styleClass="btnPrimario"
+						style="margin:1px 10px 1px 1px;"
+						action="#{empresaMB.validarEmpresaCreada()}" />
+
+					<h:commandButton value="Regresar" styleClass="btnSecundario"
+						style="margin:1px 10px 1px 1px;"
+						action="/compania/perfilCompania" immediate="true" />
+				</h:panelGrid>
+
+
+		</div>
+	</h:form>
+
+</h:body>
+</html>
